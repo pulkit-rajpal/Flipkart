@@ -72,7 +72,7 @@ public class BaseTest {
 			ChromeOptions options = new ChromeOptions();
 //	        options.addArguments("--headless");
 			driver = new ChromeDriver(options);
-			System.out.println(driver);
+			driver.manage().window().maximize();
 		} else if (prop1.getProperty("Browser").equalsIgnoreCase("ie")) {
 			System.setProperty(prop1.getProperty("ieDriverProperty"), prop1.getProperty("ieDriverPath"));
 			driver = new InternetExplorerDriver();
@@ -94,36 +94,39 @@ public class BaseTest {
 
 	@AfterSuite
 	public static void closebrowser() {
-		driver.close();
-		driver.quit();
+		// driver.close();
+		// driver.quit();
 	}
 
-	    @AfterMethod()
-		public void attachScreenshot(ITestResult result) {
-			if (result.getStatus() == ITestResult.FAILURE) {
-				String screenshotPath = Screenshot.captureScreenshot(driver, result.getName());
-				extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
-				extent.endTest(extentTest);
-			} else if (result.getStatus() == ITestResult.SUCCESS) {
-				extentTest.log(LogStatus.PASS, "Test Case Passed Successfully!!!");
-			}
+	@AfterMethod()
+	public void attachScreenshot(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE) {
+			String screenshotPath = Screenshot.captureScreenshot(driver, result.getName());
+			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+			extent.endTest(extentTest);
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			extentTest.log(LogStatus.PASS, "Test Case Passed Successfully!!!");
 		}
-	    
-	    
-	public static void ReturnToHomePage() {
-
-		driver.get(prop1.getProperty("url"));
-	}
-
-	public static void ReturnToAddressPage() {
-		driver.get(prop1.getProperty("addressurl"));
 	}
 
 	public static void ReturnToSignInPage() {
 		driver.get(prop1.getProperty("loginurl"));
 	}
-	
+
 	public static void gottLogoutPage() {
 		driver.get(prop1.getProperty("accounturl"));
 	}
+
+	public static void gotoCart() {
+		driver.get(prop1.getProperty("carturl"));
+	}
+
+	public static void gotoWishlist() {
+		driver.get(prop1.getProperty("wishlisturl"));
+	}
+
+	public static void gotoAddress() {
+		driver.get(prop1.getProperty("addressurl"));
+	}
+
 }

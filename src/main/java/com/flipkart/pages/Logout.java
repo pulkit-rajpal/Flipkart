@@ -15,7 +15,7 @@ public class Logout {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(how = How.CLASS_NAME,using = "_16v3bB")
+	@FindBy(how = How.XPATH,using = "//span[@class='_16v3bB']")
 	public WebElement logOut ;
 	
 	

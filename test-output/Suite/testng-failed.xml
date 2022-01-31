@@ -8,23 +8,12 @@
           <include name="attachScreenshot"/>
           <include name="initializeWebdriver"/>
           <include name="closebrowser"/>
+          <include name="logout"/>
           <include name="endReport"/>
           <include name="navigateToGoogleSearchPage"/>
-          <include name="validLogin"/>
           <include name="setExtent"/>
         </methods>
       </class> <!-- com.flipkart.tests.LogoutTest -->
-      <class name="com.flipkart.tests.LoginTest">
-        <methods>
-          <include name="attachScreenshot"/>
-          <include name="initializeWebdriver"/>
-          <include name="closebrowser"/>
-          <include name="endReport"/>
-          <include name="validLogin"/>
-          <include name="navigateToGoogleSearchPage"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- com.flipkart.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

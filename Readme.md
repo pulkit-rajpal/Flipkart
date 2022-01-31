@@ -15,7 +15,7 @@ Running test case with CHROME with NORMAL & HEADLESS MODE
 
 
 Run Terminal in Root Folder
-(\PythonAutomation>)
+(\Flipkart>)
 ```bash
 (normal)
  pytest --tb=no  .\test_Tests\ -s  --browser chrome --headless False  --html=reports/report2.html  --log-cli-level=INFO

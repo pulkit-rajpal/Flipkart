@@ -10,13 +10,14 @@ public class LogoutTest  extends BaseTest{
 
 
 	@Test(priority = 1)
-	public void validLogin()  {
+	public void logout()  {
 		Logout logout = new Logout(driver);
 		extentTest = extent.startTest("Verify LogOut  with Valid Credentials");
 		gottLogoutPage();
 		logout.clickLogout();		
 		extent.endTest(extentTest);
-		assertEquals(logout.verifyMsg(), "Login");
+		System.out.println(logout.verifyMsg());
+		assertEquals(logout.verifyMsg(), "Logout");
 	}
 
 	

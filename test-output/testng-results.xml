@@ -1,110 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="7" passed="0" failed="2" skipped="0">
+<testng-results ignored="6" total="8" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-30T15:06:52 IST" name="Suite" finished-at="2022-01-30T15:07:05 IST" duration-ms="12764">
+  <suite started-at="2022-01-31T15:33:19 IST" name="Default suite" finished-at="2022-01-31T15:33:40 IST" duration-ms="20531">
     <groups>
+      <group name="validLogin">
+        <method signature="LoginTest.validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@3c407114]" name="validLogin" class="com.flipkart.tests.LoginTest"/>
+      </group> <!-- validLogin -->
     </groups>
-    <test started-at="2022-01-30T15:06:52 IST" name="Test" finished-at="2022-01-30T15:07:05 IST" duration-ms="12764">
-      <class name="com.flipkart.tests.LogoutTest">
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.LogoutTest@27ce24aa]" started-at="2022-01-30T15:07:00 IST" name="navigateToGoogleSearchPage" finished-at="2022-01-30T15:07:03 IST" duration-ms="2284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="validLogin()[pri:1, instance:com.flipkart.tests.LogoutTest@27ce24aa]" started-at="2022-01-30T15:07:03 IST" name="validLogin" finished-at="2022-01-30T15:07:04 IST" duration-ms="1626" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Login] but found [MY ORDERS]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Login] but found [MY ORDERS]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.flipkart.tests.LogoutTest.validLogin(LogoutTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LogoutTest@27ce24aa]" started-at="2022-01-30T15:07:04 IST" name="attachScreenshot" finished-at="2022-01-30T15:07:05 IST" duration-ms="308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validLogin status=FAILURE method=LogoutTest.validLogin()[pri:1, instance:com.flipkart.tests.LogoutTest@27ce24aa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-      </class> <!-- com.flipkart.tests.LogoutTest -->
-      <class name="com.flipkart.tests.LoginTest">
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.LoginTest@4f209819]" started-at="2022-01-30T15:06:49 IST" name="initializeWebdriver" finished-at="2022-01-30T15:06:52 IST" duration-ms="2576" status="PASS">
+    <test started-at="2022-01-31T15:33:19 IST" name="Default test" finished-at="2022-01-31T15:33:40 IST" duration-ms="20531">
+      <class name="com.flipkart.tests.AddressTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa]" started-at="2022-01-31T15:33:17 IST" name="initializeWebdriver" finished-at="2022-01-31T15:33:19 IST" duration-ms="1772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.LoginTest@4f209819]" started-at="2022-01-30T15:06:52 IST" name="setExtent" finished-at="2022-01-30T15:06:52 IST" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa]" started-at="2022-01-31T15:33:19 IST" name="setExtent" finished-at="2022-01-31T15:33:19 IST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.LoginTest@4f209819]" started-at="2022-01-30T15:06:52 IST" name="navigateToGoogleSearchPage" finished-at="2022-01-30T15:06:54 IST" duration-ms="1888" status="PASS">
+        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa]" started-at="2022-01-31T15:33:34 IST" name="navigateToGoogleSearchPage" finished-at="2022-01-31T15:33:35 IST" duration-ms="1353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@4f209819]" started-at="2022-01-30T15:06:54 IST" name="validLogin" finished-at="2022-01-30T15:07:00 IST" duration-ms="5866" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="addInValidAddress()[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa]" started-at="2022-01-31T15:33:35 IST" name="addInValidAddress" depends-on-groups="validLogin" finished-at="2022-01-31T15:33:40 IST" duration-ms="4549" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_1QhEVk']"}
   (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PULKITRAJPAL', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d309d0b7e32d381410f1ac5f12a64f9]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57701}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e84b184a3d304e3877e4767e3f2ce89
+*** Element info: {Using=xpath, value=//div[@class='_1QhEVk']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_1QhEVk']"}
   (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PULKITRAJPAL', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d309d0b7e32d381410f1ac5f12a64f9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57701}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e84b184a3d304e3877e4767e3f2ce89
+*** Element info: {Using=xpath, value=//div[@class='_1QhEVk']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -116,10 +56,15 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-at com.flipkart.pages.Login.verifyName(Login.java:63)
-at com.flipkart.tests.LoginTest.validLogin(LoginTest.java:18)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.flipkart.pages.Address.click_add(Address.java:52)
+at com.flipkart.tests.AddressTest.addInValidAddress(AddressTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,30 +95,51 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LoginTest@4f209819]" started-at="2022-01-30T15:07:00 IST" name="attachScreenshot" finished-at="2022-01-30T15:07:00 IST" duration-ms="722" status="PASS">
+        </test-method> <!-- addInValidAddress -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa]" started-at="2022-01-31T15:33:40 IST" name="attachScreenshot" finished-at="2022-01-31T15:33:40 IST" duration-ms="165" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLogin status=FAILURE method=LoginTest.validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@4f209819] output={null}]]]>
+                <![CDATA[[TestResult name=addInValidAddress status=FAILURE method=AddressTest.addInValidAddress()[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.LoginTest@4f209819]" started-at="2022-01-30T15:07:05 IST" name="closebrowser" finished-at="2022-01-30T15:07:06 IST" duration-ms="921" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa]" started-at="2022-01-31T15:33:40 IST" name="closebrowser" finished-at="2022-01-31T15:33:40 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.LoginTest@4f209819]" started-at="2022-01-30T15:07:06 IST" name="endReport" finished-at="2022-01-30T15:07:06 IST" duration-ms="402" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.AddressTest@27ce24aa]" started-at="2022-01-31T15:33:40 IST" name="endReport" finished-at="2022-01-31T15:33:40 IST" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
+      </class> <!-- com.flipkart.tests.AddressTest -->
+      <class name="com.flipkart.tests.LoginTest">
+        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.LoginTest@3c407114]" started-at="2022-01-31T15:33:19 IST" name="navigateToGoogleSearchPage" finished-at="2022-01-31T15:33:33 IST" duration-ms="14109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToGoogleSearchPage -->
+        <test-method signature="validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@3c407114]" started-at="2022-01-31T15:33:33 IST" name="validLogin" finished-at="2022-01-31T15:33:34 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LoginTest@3c407114]" started-at="2022-01-31T15:33:34 IST" name="attachScreenshot" finished-at="2022-01-31T15:33:34 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=LoginTest.validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@3c407114] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
       </class> <!-- com.flipkart.tests.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
