@@ -3,8 +3,6 @@ package com.flipkart.pages;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.impl.PublicImpl;
-import org.bson.codecs.ValueCodecProvider;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -85,10 +83,8 @@ public class Product {
 		brandclass.sendKeys(brand);
 		brandvalue.click();
 	}
-	
-	
-	public void addRating()
-	{
+
+	public void addRating() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		ratingProd.click();
 	}
@@ -96,9 +92,9 @@ public class Product {
 	public boolean verifyBrand(String brand) {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver.navigate().refresh();
-		List<WebElement> results = driver.findElements(By.className("_4rR01T"));	
+		List<WebElement> results = driver.findElements(By.className("_4rR01T"));
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		boolean conc =  results.get(0).getText().toLowerCase().contains(brand);
+		boolean conc = results.get(0).getText().toLowerCase().contains(brand);
 		return conc;
 	}
 }

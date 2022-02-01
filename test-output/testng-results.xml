@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-01T15:25:21 IST" name="Default suite" finished-at="2022-02-01T15:25:28 IST" duration-ms="6969">
+  <suite started-at="2022-02-01T23:40:07 IST" name="Default suite" finished-at="2022-02-01T23:40:19 IST" duration-ms="12230">
     <groups>
     </groups>
-    <test started-at="2022-02-01T15:25:21 IST" name="Default test" finished-at="2022-02-01T15:25:28 IST" duration-ms="6969">
-      <class name="com.flipkart.tests.ProductTest">
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@27ce24aa]" started-at="2022-02-01T15:25:18 IST" name="initializeWebdriver" finished-at="2022-02-01T15:25:20 IST" duration-ms="2719" status="PASS">
+    <test started-at="2022-02-01T23:40:07 IST" name="Default test" finished-at="2022-02-01T23:40:19 IST" duration-ms="12230">
+      <class name="com.flipkart.tests.ProductDetailsTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8]" started-at="2022-02-01T23:40:04 IST" name="initializeWebdriver" finished-at="2022-02-01T23:40:06 IST" duration-ms="2271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.ProductTest@27ce24aa]" started-at="2022-02-01T15:25:20 IST" name="setExtent" finished-at="2022-02-01T15:25:21 IST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8]" started-at="2022-02-01T23:40:06 IST" name="setExtent" finished-at="2022-02-01T23:40:07 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.ProductTest@27ce24aa]" started-at="2022-02-01T15:25:21 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-01T15:25:24 IST" duration-ms="2788" status="PASS">
+        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8]" started-at="2022-02-01T23:40:07 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-01T23:40:11 IST" duration-ms="4663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="chooseProductRating()[pri:5, instance:com.flipkart.tests.ProductTest@27ce24aa]" started-at="2022-02-01T15:25:24 IST" name="chooseProductRating" finished-at="2022-02-01T15:25:28 IST" duration-ms="4117" status="PASS">
+        <test-method signature="changeSizeofProduct()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8]" started-at="2022-02-01T23:40:11 IST" name="changeSizeofProduct" finished-at="2022-02-01T23:40:19 IST" duration-ms="7503" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chooseProductRating -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@27ce24aa]" started-at="2022-02-01T15:25:28 IST" name="attachScreenshot" finished-at="2022-02-01T15:25:28 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- changeSizeofProduct -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8]" started-at="2022-02-01T23:40:19 IST" name="attachScreenshot" finished-at="2022-02-01T23:40:19 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chooseProductRating status=SUCCESS method=ProductTest.chooseProductRating()[pri:5, instance:com.flipkart.tests.ProductTest@27ce24aa] output={null}]]]>
+                <![CDATA[[TestResult name=changeSizeofProduct status=SUCCESS method=ProductDetailsTest.changeSizeofProduct()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@27ce24aa]" started-at="2022-02-01T15:25:28 IST" name="closebrowser" finished-at="2022-02-01T15:25:28 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8]" started-at="2022-02-01T23:40:19 IST" name="closebrowser" finished-at="2022-02-01T23:40:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.ProductTest@27ce24aa]" started-at="2022-02-01T15:25:28 IST" name="endReport" finished-at="2022-02-01T15:25:29 IST" duration-ms="773" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@31c88ec8]" started-at="2022-02-01T23:40:19 IST" name="endReport" finished-at="2022-02-01T23:40:20 IST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.flipkart.tests.ProductTest -->
+      </class> <!-- com.flipkart.tests.ProductDetailsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
