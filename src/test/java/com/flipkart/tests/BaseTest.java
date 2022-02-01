@@ -94,8 +94,8 @@ public class BaseTest {
 
 	@AfterSuite
 	public static void closebrowser() {
-		// driver.close();
-		// driver.quit();
+//		 driver.close();
+//		 driver.quit();
 	}
 
 	@AfterMethod()
@@ -109,8 +109,8 @@ public class BaseTest {
 		}
 	}
 
-	public static void ReturnToSignInPage() {
-		driver.get(prop1.getProperty("loginurl"));
+	public static void ReturnToLoginInPage() {
+		driver.get(prop1.getProperty("login"));
 	}
 
 	public static void gottLogoutPage() {

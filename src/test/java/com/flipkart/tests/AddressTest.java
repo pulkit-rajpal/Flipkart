@@ -25,7 +25,7 @@ public class AddressTest extends BaseTest {
 		Address address =  new Address(driver);
 		gotoAddress();
 		address.click_add();
-		address.add_details("test", "9876543210", "12121200120", "hNO-3434,Block-5,Gurgoan,India","Gurgoan", "", "Haryana");
+		address.add_details("test", "9876543210", "12121200120", "hNO-3434,Block-5,Gurgoan,India","Gurgoan", "Gurgoan", "Haryana");
 		assertEquals(address.getErrorMsg(), "Pincode entered is wrong.");
 		extent.endTest(extentTest);
 	}

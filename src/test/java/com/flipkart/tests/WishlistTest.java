@@ -2,7 +2,7 @@ package com.flipkart.tests;
 
 import org.testng.annotations.Test;
 
-import com.flipkart.pages.SearchProduct;
+import com.flipkart.pages.Product;
 import com.flipkart.pages.Wishlist;
 
 public class WishlistTest extends BaseTest {
@@ -10,7 +10,7 @@ public class WishlistTest extends BaseTest {
 	@Test(priority = 0, dependsOnGroups = "validLogin")
 	public void addTowishlist() {
 		extentTest = extent.startTest("Verify Add a product To WishList");
-		SearchProduct search = new SearchProduct(driver);
+		Product search = new Product(driver);
 		search.search("iPhone");
 		Wishlist wish = new Wishlist(driver);
 		wish.clickWishlist();

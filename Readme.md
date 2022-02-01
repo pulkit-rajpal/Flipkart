@@ -3,7 +3,7 @@
 
 Flipkart Demo Automation Framework is the 
 Framework for the Testing various 
-Functionalities for the Sause Website 
+Functionalities for the Flipkart Website  
 
 (private github Repo)
 
