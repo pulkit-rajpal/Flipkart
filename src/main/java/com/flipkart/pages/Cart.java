@@ -32,16 +32,12 @@ public class Cart {
 	@FindBy(xpath = "//div[normalize-space()='Remove']")
 	public WebElement remove;
 
-
 	@FindBy(xpath = "//div[@class='_3dsJAO _24d-qY FhkMJZ']")
 	public WebElement removeButton;
-
-	
 
 	@FindBy(xpath = "//div[@class='_16FRp0']")
 	public WebElement soldMsg;
 
-	
 	public void search(String keyword) {
 		searchkey.sendKeys(keyword);
 		searchIcon.click();
@@ -50,7 +46,7 @@ public class Cart {
 	public void click_product() {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		List<WebElement> results = driver.findElements(By.className("_2r_T1I"));
-		results.get(results.size()-1).click();
+		results.get(results.size() - 1).click();
 	}
 
 	public void clickAddTocart() {
@@ -80,6 +76,5 @@ public class Cart {
 		}
 		return soldMsg.getText();
 	}
-
 
 }
