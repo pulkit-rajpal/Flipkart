@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="Login" />
+				<include name="Logout" />
+				<include name="profile" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.flipkart.tests.LoginTest" />
+			<class name="com.flipkart.tests.LogoutTest" />
+			<class name="com.flipkart.tests.AddressTest" />
+			<class name="com.flipkart.tests.FlipkartProfileInfoTest" />
+		</classes>
+	</test>
+</suite> 

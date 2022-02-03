@@ -3,17 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.tests.ProductDetailsTest">
+      <class name="com.flipkart.tests.LoginTest">
         <methods>
+          <include name="getTestData"/>
           <include name="attachScreenshot"/>
           <include name="initializeWebdriver"/>
           <include name="closebrowser"/>
           <include name="endReport"/>
-          <include name="changeSizeofProduct"/>
+          <include name="validLogin"/>
           <include name="navigateToGoogleSearchPage"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- com.flipkart.tests.ProductDetailsTest -->
+      </class> <!-- com.flipkart.tests.LoginTest -->
+      <class name="com.flipkart.tests.AddressTest">
+        <methods>
+          <include name="addValidAddress"/>
+          <include name="getTestData"/>
+          <include name="attachScreenshot"/>
+          <include name="initializeWebdriver"/>
+          <include name="closebrowser"/>
+          <include name="endReport"/>
+          <include name="navigateToGoogleSearchPage"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- com.flipkart.tests.AddressTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

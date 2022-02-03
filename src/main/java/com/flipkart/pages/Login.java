@@ -54,12 +54,11 @@ public class Login {
 
 	public String verifyName() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		String name = wait
-				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'pulkit')]")))
-				.getText();
+	  WebElement element=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'pulkit')]")));
+		String name = element.getText();
 		return name;
 	}
-
+	
 	public String getError() {
 		return getErrorMsg.getText();
 	}

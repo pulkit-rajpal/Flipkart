@@ -33,11 +33,11 @@ public class FlipkartProfile {
 	public void gotoProfile() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement menu = wait.until(ExpectedConditions
-				.presenceOfElementLocated(By.xpath(".//div[@class='exehdJ'][normalize-space()='pulkit']")));
+				.elementToBeClickable(By.xpath(".//div[@class='exehdJ'][normalize-space()='pulkit']")));
 		Actions actions = new Actions(driver);
 		actions.moveToElement(menu).perform();
 		WebElement prof = wait
-				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[normalize-space()='My Profile']")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[normalize-space()='My Profile']")));
 		actions.moveToElement(prof);
 		actions.click().build().perform();
 	}

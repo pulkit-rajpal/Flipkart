@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,12 +21,25 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.log4testng.Logger;
 
+import com.flipkart.utils.FileReadExcel;
 import com.flipkart.utils.Screenshot;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseTest {
+
+	public static String name;
+	public static String mobNo;
+	public static String pwd;
+	public static String nameval;
+	public static String mob;
+	public static String pin;
+	public static String invalidpin;
+	public static String ad1;
+	public static String ad2;
+	public static String cty;
+	public static String st;
 
 	public static WebDriver driver;
 	static File file1 = new File(".\\Resources\\config.properties");
@@ -33,7 +48,7 @@ public class BaseTest {
 	static FileInputStream fis2 = null;
 	static Properties prop1 = new Properties();
 	static Properties prop2 = new Properties();
-	public static final Logger log = Logger.getLogger(BaseTest.class);
+	public static final Logger logger = Logger.getLogger(BaseTest.class);
 
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
@@ -53,19 +68,37 @@ public class BaseTest {
 		}
 	}
 
-	@BeforeSuite
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" })
 	public void setExtent() {
 		extent = new ExtentReports(".\\Reports\\extentreport.html");
-
+		logger.info("Extent Reporting is  Initiated");
 	}
 
-	@AfterSuite
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" })
+	public void getTestData() throws EncryptedDocumentException, InvalidFormatException, IOException {
+		FileReadExcel testData = FileReadExcel.getData();
+		name = testData.name.replace("\"", "");
+		mobNo = testData.mobNo.replace("\"", "");
+		pwd = testData.pwd.replace("\"", "");
+		nameval = testData.nameval.replace("\"", "");
+		mob = testData.mob.replace("\"", "");
+		pin = testData.pin.replace("\"", "");
+		invalidpin = testData.invalidpin.replace("\"", "");
+		ad1 = testData.ad1.replace("\"", "");
+		ad2 = testData.ad2.replace("\"", "");
+		cty = testData.cty;
+		st = testData.st;
+	}
+
+	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" })
 	public void endReport() {
 		extent.flush();
 		extent.close();
+		logger.info("Extent Reporting  is Finished");
+
 	}
 
-	@BeforeSuite
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" })
 	public static void initializeWebdriver() {
 		if (prop1.getProperty("Browser").equalsIgnoreCase("chrome")) {
 			System.setProperty(prop1.getProperty("chromeDriverProperty"), prop1.getProperty("chromeDriverPath"));
@@ -83,22 +116,23 @@ public class BaseTest {
 			System.setProperty(prop1.getProperty("firefoxDriverProperty"), prop1.getProperty("firefoxDriverPath"));
 			driver = new FirefoxDriver();
 		}
-
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups = { "Login", "Logout", "validlogin", "profile" })
 	public static void navigateToGoogleSearchPage() {
 
 		driver.get(prop1.getProperty("loginurl"));
 	}
 
-	@AfterSuite
+	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" })
 	public static void closebrowser() {
-//		 driver.close();
-//		 driver.quit();
+//		driver.close();
+//		driver.quit();
+		logger.info("Webdriver is Closed");
+
 	}
 
-	@AfterMethod()
+	@AfterMethod(groups = { "Login", "Logout", "validlogin", "profile" })
 	public void attachScreenshot(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String screenshotPath = Screenshot.captureScreenshot(driver, result.getName());

@@ -68,7 +68,7 @@ public class ProductDetails {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		System.out.println(wbElement1.getText());
 		System.out.println(wbElement.getText().replace("Size:", ""));
-		if (wbElement1.getText().compareTo(wbElement.getText().replace("Size:", ""))==0) {
+		if (wbElement1.getText().compareTo(wbElement.getText().replace("Size:", "")) == 0) {
 			return true;
 		} else {
 			return false;

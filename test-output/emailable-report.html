@@ -8,11 +8,23 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,387</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">34,727</td><td>Logout, profile, Login</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.flipkart.tests.ProductDetailsTest</td><td><a href="#m0">changeSizeofProduct</a></td><td rowspan="1">1643794298302</td><td rowspan="1">7015</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.flipkart.tests.FlipkartProfileInfoTest</td><td><a href="#m0">changeName</a></td><td rowspan="1">1643906920321</td><td rowspan="1">1801</td></tr><tr class="failedodd"><td rowspan="1">com.flipkart.tests.LoginTest</td><td><a href="#m1">invalidLogin</a></td><td rowspan="1">1643906894443</td><td rowspan="1">1235</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.flipkart.tests.AddressTest</td><td><a href="#m2">addInValidAddress</a></td><td rowspan="1">1643906916002</td><td rowspan="1">3108</td></tr><tr class="passedeven"><td><a href="#m3">addValidAddress</a></td><td rowspan="1">1643906908774</td><td rowspan="1">6036</td></tr><tr class="passedodd"><td rowspan="1">com.flipkart.tests.FlipkartProfileInfoTest</td><td><a href="#m4">changeGender</a></td><td rowspan="1">1643906923638</td><td rowspan="1">1470</td></tr><tr class="passedeven"><td rowspan="1">com.flipkart.tests.LoginTest</td><td><a href="#m5">validLogin</a></td><td rowspan="1">1643906898358</td><td rowspan="1">5135</td></tr><tr class="passedodd"><td rowspan="1">com.flipkart.tests.LogoutTest</td><td><a href="#m6">logout</a></td><td rowspan="1">1643906905231</td><td rowspan="1">1695</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.flipkart.tests.ProductDetailsTest#changeSizeofProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.flipkart.tests.FlipkartProfileInfoTest#changeName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [pulkit] but found []
+	at com.flipkart.tests.FlipkartProfileInfoTest.changeName(FlipkartProfileInfoTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.flipkart.tests.LoginTest#invalidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [Your username or password is incorrect] but found [Your username or password is incorrect]
+	at com.flipkart.tests.LoginTest.invalidLogin(LoginTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.flipkart.tests.AddressTest#addInValidAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.flipkart.tests.AddressTest#addValidAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.flipkart.tests.FlipkartProfileInfoTest#changeGender</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.flipkart.tests.LoginTest#validLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.flipkart.tests.LogoutTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

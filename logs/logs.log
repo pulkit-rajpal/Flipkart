@@ -1,2 +1,271 @@
 [INFO ] 2022-02-02 15:01:38.323 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
 [INFO ] 2022-02-02 15:01:45.315 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-03 15:56:03.963 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-03 15:56:07.182 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-03 15:56:10.973 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-03 15:56:12.303 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-03 15:56:12.304 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-03 15:56:30.912 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-03 15:56:38.267 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-03 15:56:41.606 [main] CartTest - Test :: Delete From  Cart Test Case Started
+[INFO ] 2022-02-03 15:56:47.767 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 15:56:54.097 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-03 15:56:57.291 [main] LoginTest - Test :: Valid Login  Test Case Started
+[INFO ] 2022-02-03 15:56:57.739 [main] LoginTest - Test :: Valid Login  Test Case Ended
+[INFO ] 2022-02-03 15:56:59.040 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 15:57:05.014 [main] WishlistTest - Test :: Adding   Product to  Wishlist  Test Case Started
+[INFO ] 2022-02-03 15:57:07.772 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 15:57:14.220 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-03 15:57:29.147 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-03 15:57:44.021 [main] HomePageTest - Test :: Scrolling on Home Page  Test Case Started
+[INFO ] 2022-02-03 15:57:44.074 [main] HomePageTest - Test :: Scrolling on Home Page  Test Case Ended
+[INFO ] 2022-02-03 15:57:45.496 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-03 15:57:49.666 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-03 15:57:54.866 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-03 15:58:00.921 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-03 15:58:02.221 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-03 15:58:04.625 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-03 16:11:45.582 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 16:11:45.616 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 16:33:53.845 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:19:39.160 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:19:40.549 [main] LoginTest - Test :: InValid Login Test Case Ended
+[INFO ] 2022-02-03 17:19:42.556 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 17:23:53.670 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:23:57.039 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 17:27:05.527 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:27:08.874 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 17:30:12.864 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:30:15.862 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 17:30:21.889 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 17:40:19.050 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:40:22.630 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 17:40:27.032 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 17:48:22.445 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:48:26.125 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 17:48:31.303 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 17:48:32.479 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 17:48:33.459 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 17:56:26.595 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 17:56:30.094 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 17:56:34.828 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 17:56:36.117 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 17:56:37.704 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 19:00:04.769 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:00:08.429 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:00:11.765 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:00:13.300 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:00:19.515 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:00:26.032 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:17:01.665 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:17:05.295 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:17:11.571 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:17:12.951 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:17:14.005 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 19:17:17.373 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:17:32.902 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:20:04.285 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:20:08.093 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:20:13.892 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:20:21.331 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:20:22.401 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 19:20:23.677 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:20:38.931 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:31:58.168 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:32:01.565 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:32:06.150 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:32:07.682 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:32:09.114 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 19:32:10.778 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:32:16.206 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:33:34.399 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:33:38.288 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:33:43.436 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:33:44.540 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:33:49.918 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:33:54.537 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:35:02.375 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:35:05.936 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:35:16.463 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:35:17.561 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:35:18.740 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 19:35:20.181 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:35:26.758 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:37:51.742 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:37:55.613 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:38:01.594 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:38:03.457 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:38:04.715 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 19:38:06.420 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:38:11.821 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:39:04.847 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:39:07.886 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:39:12.867 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:39:14.313 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:39:16.128 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 19:39:17.773 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:39:22.402 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:50:22.815 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:50:26.506 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:50:29.528 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:50:35.233 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:51:38.246 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:51:42.017 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:51:45.551 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:51:51.116 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 19:56:55.139 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 19:56:58.933 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 19:57:01.782 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 19:57:03.124 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 19:57:09.519 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 19:57:15.475 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:01:36.263 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:01:40.032 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:01:45.130 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:01:46.448 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:01:48.021 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 20:01:49.921 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:01:54.645 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:02:47.211 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:02:50.968 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:02:52.472 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:04:55.444 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:04:59.412 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:05:00.939 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:05:05.925 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 20:11:19.907 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:11:23.220 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:11:28.443 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:11:29.802 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:11:35.580 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:11:39.201 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 20:12:02.460 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:12:06.170 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:12:09.318 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:13:55.978 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:14:00.151 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:14:03.873 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:14:58.736 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:15:02.351 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:15:07.578 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:15:08.597 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:15:10.147 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 20:15:12.109 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:15:16.016 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:15:19.355 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 20:20:56.959 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:21:00.060 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:21:03.247 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:21:04.335 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:21:05.373 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 20:21:07.441 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:21:18.530 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:21:22.942 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 20:22:11.095 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:22:14.402 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:22:18.828 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:22:20.003 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:22:27.594 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:22:32.300 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 20:22:36.538 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 20:26:54.467 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:26:57.726 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:27:02.645 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:27:04.337 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:27:05.915 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 20:27:07.829 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:28:19.173 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:28:22.499 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:28:27.346 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:28:28.763 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:28:29.912 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 20:28:31.415 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:29:43.098 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:29:46.366 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:29:51.068 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:29:52.365 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:29:53.649 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 20:29:55.248 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:31:28.733 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 20:31:31.887 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 20:31:36.938 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 20:31:38.087 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 20:31:39.336 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 20:31:41.065 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 20:31:47.207 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-03 21:30:04.799 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 21:30:08.530 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 21:30:14.741 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 21:30:16.261 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 21:30:17.499 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 21:30:19.748 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 21:30:37.696 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 21:30:40.598 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 21:30:42.273 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-03 21:30:46.286 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-03 21:30:47.445 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-03 21:48:45.055 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 21:48:48.069 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 21:48:52.475 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 21:48:53.673 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 21:48:55.140 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 21:48:56.817 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 21:49:10.395 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 21:49:13.278 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 21:49:14.419 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-03 21:49:17.497 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-03 21:49:18.608 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-03 21:52:33.754 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 21:52:37.188 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 21:52:41.651 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 21:52:42.929 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 21:52:44.274 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 21:52:46.564 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 21:52:53.917 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 21:52:57.637 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 21:52:59.102 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-03 21:53:06.369 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-03 21:53:07.513 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-03 21:54:46.575 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 21:54:50.485 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 21:54:53.775 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 22:01:04.375 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 22:01:07.072 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 22:01:10.025 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 22:01:11.077 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 22:01:12.370 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 22:01:14.005 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 22:01:20.886 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-03 22:01:33.621 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 22:01:37.943 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-03 22:01:41.639 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-03 22:01:42.832 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-03 22:07:47.937 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 22:07:51.259 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 22:07:56.353 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 22:07:57.528 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 22:07:59.346 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 22:08:01.623 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 22:08:12.213 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 22:08:15.820 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 22:09:35.559 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 22:09:39.882 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 22:09:45.163 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 22:09:46.719 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 22:09:48.325 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 22:09:50.112 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 22:09:57.364 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-03 22:09:59.127 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 22:10:02.336 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 22:18:14.469 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-03 22:18:18.362 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-03 22:18:23.492 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-03 22:18:25.235 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-03 22:18:26.926 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-03 22:18:28.776 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-03 22:18:34.809 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-03 22:18:36.004 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-03 22:18:39.109 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-03 22:18:40.323 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-03 22:18:43.641 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-03 22:18:45.108 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended

@@ -3,40 +3,32 @@ package com.flipkart.utils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 
-import org.apache.commons.io.FilenameUtils;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;  
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+
 public class FileReadExcel {
-	
+	public String name;
+	public String mobNo;
+	public String pwd;
+	public String nameval;
+	public String mob;
+	public String pin;
+	public String invalidpin;
+	public String ad1;
+	public String ad2;
+	public String cty;
+	public String st;
 
-	
-	@SuppressWarnings("resource")
-	public void readExcel(String path) throws IOException
-	{	XSSFWorkbook data = null;
-		File fs= new File(path);
-		FileInputStream fis = new FileInputStream(fs);
-		String filename = FilenameUtils.getName(path);
-		if (filename.substring(filename.indexOf(".")).equals(".xlx"))
-		{
-			
-		}
-		data = new XSSFWorkbook(fis);
-		XSSFSheet sh1=  data.getSheetAt(0);
-		int rowCount = sh1.getLastRowNum()-sh1.getFirstRowNum();
-	    for (int i = 0; i < rowCount+1; i++) {
-	        Row row = sh1.getRow(i);
-	        for (int j = 0; j < row.getLastCellNum(); j++) {
-	            System.out.print(row.getCell(j).getStringCellValue()+"|| ");
-	        }
-	        System.out.println();
-	    } 
-		}
-
-	
-	public static void main(String[] args) throws IOException {
-		FileReadExcel a = new FileReadExcel();
-		a.readExcel(".\\Resources\\TestCasesFile.xlsx");
+	public static FileReadExcel getData() throws IOException, EncryptedDocumentException, InvalidFormatException {
+		InputStream file = new FileInputStream(new File(".\\Resources\\TestCasesFile.xlsx"));
+		List<FileReadExcel> testData = ExcelToPojoUtils.toPojo(FileReadExcel.class, file);
+		return testData.get(0);
 	}
+
+}
+
+class TestData {
 }

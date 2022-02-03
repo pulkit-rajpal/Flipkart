@@ -1,10 +1,16 @@
 package com.flipkart.pages;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Address {
 
@@ -14,6 +20,9 @@ public class Address {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
+
+//	@FindBy(how = How.XPATH, using = "//div[@class='NS64GK _1MZ7_i']")
+//	public WebElement manageAddress;
 
 	@FindBy(how = How.XPATH, using = "//div[@class='_1QhEVk']")
 	public WebElement addAddress;
@@ -48,7 +57,16 @@ public class Address {
 	@FindBy(how = How.XPATH, using = "//div[@class='_2x29pL']")
 	public WebElement errorMsg;
 
+	public void click_ManageAddress() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement manageAddress = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//div[normalize-space()='Manage Addresses']")));
+		System.out.println(manageAddress.getText());
+		manageAddress.click();
+	}
+
 	public void click_add() {
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		addAddress.click();
 	}
 
@@ -66,6 +84,18 @@ public class Address {
 
 	public String getErrorMsg() {
 		return errorMsg.getText();
+	}
+
+	public void gotoProfile() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement menu = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class='exehdJ'][normalize-space()='pulkit']")));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(menu).perform();
+		WebElement prof = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[normalize-space()='My Profile']")));
+		actions.moveToElement(prof);
+		actions.click().build().perform();
 	}
 
 }

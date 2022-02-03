@@ -5,6 +5,7 @@
 <classes>
 <class name= 'com.flipkart.tests.LoginTest'/>
 <class name= 'com.flipkart.tests.LogoutTest'/>
+<class name= 'com.flipkart.tests.AddressTest'/>
 </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

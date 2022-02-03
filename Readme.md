@@ -17,19 +17,13 @@ Running test case with CHROME with NORMAL & HEADLESS MODE
 Run Terminal in Root Folder
 (\Flipkart>)
 ```bash
-(normal)
- pytest --tb=no  .\test_Tests\ -s  --browser chrome --headless False  --html=reports/report2.html  --log-cli-level=INFO
-(headless)
- pytest --tb=no  .\test_Tests\ -s  --browser chrome --headless True  --html=reports/report2.html  --log-cli-level=INFO
+mvn run test
 ```
 
 Running test case with CHROME with NORMAL & HEADLESS MODE 
 
 ```bash
-(normal)
- pytest --tb=no  .\test_Tests\ -s  --browser firefox --headless True  --html=reports/report2.html  --log-cli-level=INFO
-(headless)
- pytest --tb=no  .\test_Tests\ -s  --browser firefox --headless False  --html=reports/report2.html  --log-cli-level=INFO
+
 ```
 
 
@@ -43,12 +37,9 @@ Python Virtual Environment
  
 ### Packages description
 
- - objects  : Consists all the Pages for  Getting the locators for elements.
- - resources : Consists the static Resources necessary for Framework.
- - reports : Contains reports & screenshots on test Failures.
- - SeleniumDrivers : Contains the driver & Customising driver functionalities.
- - test_Test :  Contains all the Test cases which includes Login, Logout & products
- - utils : Contain Global Configs & other utilities
+ - com.flipkart.pages : Consists all the Pages for  Getting the locators for elements.
+ - com.flipkart.utils : Consists the static Resources necessary for Framework.
+ - com.flipkart.tests : Contains Test Cases.
  
 
 
