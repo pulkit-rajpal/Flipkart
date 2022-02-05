@@ -13,7 +13,7 @@ public class ProductTest extends BaseTest {
 
 	public static Logger logger = LogManager.getLogger(ProductTest.class);
 
-	@Test(priority = 1)
+	@Test(groups = "product", priority = 1)
 	public void relevantProducts() {
 		logger.info("Test :: Relevent Product Test Case Started");
 		Product search = new Product(driver);
@@ -27,7 +27,7 @@ public class ProductTest extends BaseTest {
 
 	}
 
-	@Test(priority = 2)
+	@Test(groups = "product", priority = 2)
 	public void sortProductByPriceHtoL() {
 		logger.info("Test :: Sorting By price High to Low  Test Case Started");
 		extentTest = extent
@@ -42,7 +42,7 @@ public class ProductTest extends BaseTest {
 
 	}
 
-	@Test(priority = 3)
+	@Test(groups = "product", priority = 3)
 	public void sortProductByPriceLtoH() {
 		logger.info("Test :: Sorting By price Low to High  Test Case Ended");
 		extentTest = extent
@@ -57,7 +57,7 @@ public class ProductTest extends BaseTest {
 
 	}
 
-	@Test(priority = 4)
+	@Test(groups = "product", priority = 4)
 	public void chooseProductBrand() {
 		logger.info("Test :: Filter  Product By Brand  Test Case Started");
 		extentTest = extent.startTest("Verify that the Brand Filter is working Fine!");
@@ -70,7 +70,7 @@ public class ProductTest extends BaseTest {
 		logger.info("Test :: Filter  Product By Brand  Test Case Ended");
 	}
 
-	@Test(priority = 5)
+	@Test(groups = "product", priority = 5)
 	public void chooseProductRating() {
 		logger.info("Test :: Filter  Product By Rating  Test Case Started");
 		extentTest = extent.startTest("Verify that the result that ");

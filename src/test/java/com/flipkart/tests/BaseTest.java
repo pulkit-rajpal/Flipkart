@@ -68,13 +68,13 @@ public class BaseTest {
 		}
 	}
 
-	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" })
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
 	public void setExtent() {
 		extent = new ExtentReports(".\\Reports\\extentreport.html");
 		logger.info("Extent Reporting is  Initiated");
 	}
 
-	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" })
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
 	public void getTestData() throws EncryptedDocumentException, InvalidFormatException, IOException {
 		FileReadExcel testData = FileReadExcel.getData();
 		name = testData.name.replace("\"", "");
@@ -85,12 +85,12 @@ public class BaseTest {
 		pin = testData.pin.replace("\"", "");
 		invalidpin = testData.invalidpin.replace("\"", "");
 		ad1 = testData.ad1.replace("\"", "");
-		ad2 = testData.ad2.replace("\"", "");
+		ad2 = testData.ad2;
 		cty = testData.cty;
 		st = testData.st;
 	}
 
-	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" })
+	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
 	public void endReport() {
 		extent.flush();
 		extent.close();
@@ -98,7 +98,7 @@ public class BaseTest {
 
 	}
 
-	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" })
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
 	public static void initializeWebdriver() {
 		if (prop1.getProperty("Browser").equalsIgnoreCase("chrome")) {
 			System.setProperty(prop1.getProperty("chromeDriverProperty"), prop1.getProperty("chromeDriverPath"));
@@ -118,13 +118,13 @@ public class BaseTest {
 		}
 	}
 
-	@BeforeMethod(groups = { "Login", "Logout", "validlogin", "profile" })
+	@BeforeMethod(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
 	public static void navigateToGoogleSearchPage() {
 
 		driver.get(prop1.getProperty("loginurl"));
 	}
 
-	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" })
+	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
 	public static void closebrowser() {
 //		driver.close();
 //		driver.quit();
@@ -132,7 +132,7 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod(groups = { "Login", "Logout", "validlogin", "profile" })
+	@AfterMethod(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
 	public void attachScreenshot(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String screenshotPath = Screenshot.captureScreenshot(driver, result.getName());

@@ -38,7 +38,9 @@ public class Login {
 	public WebElement getErrorMsg;
 
 	public void entermobileNo(String mobNo) {
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement mobileNumber = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='_2IX_2- VJZDxU']")));
 		mobileNumber.sendKeys(mobNo);
 	}
 
@@ -47,18 +49,20 @@ public class Login {
 	}
 
 	public void click_LoginButton() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		LoginButton.click();
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
 
 	public String verifyName() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-	  WebElement element=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'pulkit')]")));
+		WebElement element = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'pulkit')]")));
 		String name = element.getText();
 		return name;
 	}
-	
+
 	public String getError() {
 		return getErrorMsg.getText();
 	}

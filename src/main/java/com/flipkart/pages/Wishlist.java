@@ -15,30 +15,18 @@ public class Wishlist {
 		this.driver = driver;
 	}
 
-	@FindBy(how = How.XPATH, using = "//div[@class='_2hVSre _25_uYi']")
+	@FindBy(how = How.XPATH, using = "path.eX72wL")
 	public WebElement Wishlist;
 
 	@FindBy(how = How.XPATH, using = "//img[@class='_2Nq6Qc']")
 	public WebElement removeWish;
 
-	
-	
-	
-	
 	public void clickWishlist() {
 		Wishlist.click();
 	}
-	
-	
+
 	public void removeWishlist() {
 		removeWish.click();
 	}
-	
-	
-	
-	
 
-
-
-	
 }

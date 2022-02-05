@@ -1,275 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="15" total="22" passed="5" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-03T22:18:10 IST" name="Suite" finished-at="2022-02-03T22:18:45 IST" duration-ms="34727">
+  <suite started-at="2022-02-05T22:51:07 IST" name="Suite" finished-at="2022-02-05T22:51:11 IST" duration-ms="4023">
     <groups>
-      <group name="validlogin">
-        <method signature="LoginTest.validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" name="validLogin" class="com.flipkart.tests.LoginTest"/>
-      </group> <!-- validlogin -->
-      <group name="Logout">
-        <method signature="LogoutTest.logout()[pri:3, instance:com.flipkart.tests.LogoutTest@487db668]" name="logout" class="com.flipkart.tests.LogoutTest"/>
-      </group> <!-- Logout -->
       <group name="profile">
-        <method signature="FlipkartProfileInfoTest.changeGender()[pri:7, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" name="changeGender" class="com.flipkart.tests.FlipkartProfileInfoTest"/>
-        <method signature="FlipkartProfileInfoTest.changeName()[pri:6, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" name="changeName" class="com.flipkart.tests.FlipkartProfileInfoTest"/>
-        <method signature="AddressTest.addInValidAddress()[pri:5, instance:com.flipkart.tests.AddressTest@46944ca9]" name="addInValidAddress" class="com.flipkart.tests.AddressTest"/>
-        <method signature="AddressTest.addValidAddress()[pri:4, instance:com.flipkart.tests.AddressTest@46944ca9]" name="addValidAddress" class="com.flipkart.tests.AddressTest"/>
+        <method signature="HomePageTest.srcollHome()[pri:20, instance:com.flipkart.tests.HomePageTest@7e3181aa]" name="srcollHome" class="com.flipkart.tests.HomePageTest"/>
       </group> <!-- profile -->
-      <group name="Login">
-        <method signature="LoginTest.validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" name="validLogin" class="com.flipkart.tests.LoginTest"/>
-        <method signature="LoginTest.invalidLogin()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" name="invalidLogin" class="com.flipkart.tests.LoginTest"/>
-      </group> <!-- Login -->
     </groups>
-    <test started-at="2022-02-03T22:18:10 IST" name="Test" finished-at="2022-02-03T22:18:45 IST" duration-ms="34727">
-      <class name="com.flipkart.tests.AddressTest">
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.AddressTest@46944ca9]" started-at="2022-02-03T22:18:26 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-03T22:18:28 IST" duration-ms="1843" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="addValidAddress()[pri:4, instance:com.flipkart.tests.AddressTest@46944ca9]" started-at="2022-02-03T22:18:28 IST" name="addValidAddress" depends-on-groups="validlogin" finished-at="2022-02-03T22:18:34 IST" duration-ms="6036" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addValidAddress -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.AddressTest@46944ca9]" started-at="2022-02-03T22:18:34 IST" name="attachScreenshot" finished-at="2022-02-03T22:18:34 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addValidAddress status=SUCCESS method=AddressTest.addValidAddress()[pri:4, instance:com.flipkart.tests.AddressTest@46944ca9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.AddressTest@46944ca9]" started-at="2022-02-03T22:18:34 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-03T22:18:36 IST" duration-ms="1189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="addInValidAddress()[pri:5, instance:com.flipkart.tests.AddressTest@46944ca9]" started-at="2022-02-03T22:18:36 IST" name="addInValidAddress" depends-on-groups="validlogin" finished-at="2022-02-03T22:18:39 IST" duration-ms="3108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addInValidAddress -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.AddressTest@46944ca9]" started-at="2022-02-03T22:18:39 IST" name="attachScreenshot" finished-at="2022-02-03T22:18:39 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addInValidAddress status=SUCCESS method=AddressTest.addInValidAddress()[pri:5, instance:com.flipkart.tests.AddressTest@46944ca9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-      </class> <!-- com.flipkart.tests.AddressTest -->
-      <class name="com.flipkart.tests.LogoutTest">
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.LogoutTest@487db668]" started-at="2022-02-03T22:18:23 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-03T22:18:25 IST" duration-ms="1725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="logout()[pri:3, instance:com.flipkart.tests.LogoutTest@487db668]" started-at="2022-02-03T22:18:25 IST" name="logout" depends-on-groups="validlogin" finished-at="2022-02-03T22:18:26 IST" duration-ms="1695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LogoutTest@487db668]" started-at="2022-02-03T22:18:26 IST" name="attachScreenshot" finished-at="2022-02-03T22:18:26 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=logout status=SUCCESS method=LogoutTest.logout()[pri:3, instance:com.flipkart.tests.LogoutTest@487db668] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-      </class> <!-- com.flipkart.tests.LogoutTest -->
-      <class name="com.flipkart.tests.LoginTest">
-        <test-method is-config="true" signature="getTestData()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:06 IST" name="getTestData" finished-at="2022-02-03T22:18:07 IST" duration-ms="946" status="PASS">
+    <test started-at="2022-02-05T22:51:07 IST" name="Test" finished-at="2022-02-05T22:51:11 IST" duration-ms="4023">
+      <class name="com.flipkart.tests.HomePageTest">
+        <test-method is-config="true" signature="getTestData()[pri:0, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:00 IST" name="getTestData" finished-at="2022-02-05T22:51:01 IST" duration-ms="1038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestData -->
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:07 IST" name="initializeWebdriver" finished-at="2022-02-03T22:18:10 IST" duration-ms="2856" status="PASS">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:01 IST" name="initializeWebdriver" finished-at="2022-02-05T22:51:07 IST" duration-ms="6533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:10 IST" name="setExtent" finished-at="2022-02-03T22:18:10 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:07 IST" name="setExtent" finished-at="2022-02-05T22:51:07 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:10 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-03T22:18:14 IST" duration-ms="3998" status="PASS">
+        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:07 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-05T22:51:11 IST" duration-ms="3112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="invalidLogin()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:14 IST" name="invalidLogin" finished-at="2022-02-03T22:18:15 IST" duration-ms="1235" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect [Your username or password is incorrect] but found [Your username or password is incorrect]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect [Your username or password is incorrect] but found [Your username or password is incorrect]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failEquals(Assert.java:1041)
-at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
-at org.testng.Assert.assertNotEquals(Assert.java:1531)
-at org.testng.Assert.assertNotEquals(Assert.java:1535)
-at com.flipkart.tests.LoginTest.invalidLogin(LoginTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="srcollHome()[pri:20, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:11 IST" name="srcollHome" finished-at="2022-02-05T22:51:11 IST" duration-ms="852" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:15 IST" name="attachScreenshot" finished-at="2022-02-03T22:18:16 IST" duration-ms="740" status="PASS">
+        </test-method> <!-- srcollHome -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:11 IST" name="attachScreenshot" finished-at="2022-02-05T22:51:11 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLogin status=FAILURE method=LoginTest.invalidLogin()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2] output={null}]]]>
+                <![CDATA[[TestResult name=srcollHome status=SUCCESS method=HomePageTest.srcollHome()[pri:20, instance:com.flipkart.tests.HomePageTest@7e3181aa] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:16 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-03T22:18:18 IST" duration-ms="1900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:18 IST" name="validLogin" finished-at="2022-02-03T22:18:23 IST" duration-ms="5135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:23 IST" name="attachScreenshot" finished-at="2022-02-03T22:18:23 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validLogin status=SUCCESS method=LoginTest.validLogin()[pri:1, instance:com.flipkart.tests.LoginTest@5dd1c9f2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:45 IST" name="closebrowser" finished-at="2022-02-03T22:18:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:11 IST" name="closebrowser" finished-at="2022-02-05T22:51:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.LoginTest@5dd1c9f2]" started-at="2022-02-03T22:18:45 IST" name="endReport" finished-at="2022-02-03T22:18:45 IST" duration-ms="466" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.HomePageTest@7e3181aa]" started-at="2022-02-05T22:51:11 IST" name="endReport" finished-at="2022-02-05T22:51:12 IST" duration-ms="364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.flipkart.tests.LoginTest -->
-      <class name="com.flipkart.tests.FlipkartProfileInfoTest">
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" started-at="2022-02-03T22:18:39 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-03T22:18:40 IST" duration-ms="1204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="changeName()[pri:6, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" started-at="2022-02-03T22:18:40 IST" name="changeName" finished-at="2022-02-03T22:18:42 IST" duration-ms="1801" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [pulkit] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [pulkit] but found []
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.flipkart.tests.FlipkartProfileInfoTest.changeName(FlipkartProfileInfoTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeName -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" started-at="2022-02-03T22:18:42 IST" name="attachScreenshot" finished-at="2022-02-03T22:18:42 IST" duration-ms="277" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=changeName status=FAILURE method=FlipkartProfileInfoTest.changeName()[pri:6, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" started-at="2022-02-03T22:18:42 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-03T22:18:43 IST" duration-ms="1235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="changeGender()[pri:7, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" started-at="2022-02-03T22:18:43 IST" name="changeGender" finished-at="2022-02-03T22:18:45 IST" duration-ms="1470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeGender -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc]" started-at="2022-02-03T22:18:45 IST" name="attachScreenshot" finished-at="2022-02-03T22:18:45 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=changeGender status=SUCCESS method=FlipkartProfileInfoTest.changeGender()[pri:7, instance:com.flipkart.tests.FlipkartProfileInfoTest@22bac7bc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-      </class> <!-- com.flipkart.tests.FlipkartProfileInfoTest -->
+      </class> <!-- com.flipkart.tests.HomePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

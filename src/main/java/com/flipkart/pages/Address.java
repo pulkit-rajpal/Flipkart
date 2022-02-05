@@ -10,9 +10,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Address {
+public class Address extends BasePage {
 
 	WebDriver driver;
 
@@ -70,19 +71,21 @@ public class Address {
 		addAddress.click();
 	}
 
-	public void add_details(String nameval, String mob, String pin, String ad1, String ad2, String cty, String st) {
+	public void add_details(String nameval, String mob, String pin, String ad1, String ad2, String cty) {
 		name.sendKeys(nameval);
 		phone.sendKeys(mob);
 		pincode.sendKeys(pin);
 		addressLine1.sendKeys(ad1);
 		addressLine2.sendKeys(ad2);
-		city.sendKeys(cty);
+		city.clear();
+		city.sendKeys("Gurugram");
 		type.click();
-		state.sendKeys(st);
+		new Select(state).selectByIndex(12);
 		savebutton.click();
 	}
 
 	public String getErrorMsg() {
+		waitForElementToBeVisible(errorMsg,driver);
 		return errorMsg.getText();
 	}
 
@@ -97,5 +100,6 @@ public class Address {
 		actions.moveToElement(prof);
 		actions.click().build().perform();
 	}
+
 
 }

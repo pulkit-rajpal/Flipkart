@@ -4,36 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Login"/>
-        <include name="Logout"/>
-        <include name="profile"/>
+        <include name="Home"/>
       </run>
     </groups>
     <classes>
-      <class name="com.flipkart.tests.LoginTest">
+      <class name="com.flipkart.tests.HomePageTest">
         <methods>
-          <include name="getTestData"/>
-          <include name="attachScreenshot"/>
-          <include name="initializeWebdriver"/>
-          <include name="closebrowser"/>
-          <include name="endReport"/>
-          <include name="invalidLogin"/>
-          <include name="navigateToGoogleSearchPage"/>
-          <include name="setExtent"/>
+          <include name="srcollHome"/>
         </methods>
-      </class> <!-- com.flipkart.tests.LoginTest -->
-      <class name="com.flipkart.tests.FlipkartProfileInfoTest">
-        <methods>
-          <include name="changeName"/>
-          <include name="getTestData"/>
-          <include name="attachScreenshot"/>
-          <include name="initializeWebdriver"/>
-          <include name="closebrowser"/>
-          <include name="endReport"/>
-          <include name="navigateToGoogleSearchPage"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- com.flipkart.tests.FlipkartProfileInfoTest -->
+      </class> <!-- com.flipkart.tests.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

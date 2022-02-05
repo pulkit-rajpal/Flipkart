@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Cart {
 	WebDriver driver;
@@ -20,10 +22,10 @@ public class Cart {
 		this.driver = driver;
 	}
 
-	@FindBy(how = How.XPATH, using = "//input[@placeholder='Search for products, brands and more']")
+	@FindBy(how = How.CSS, using = "input._3704LK")
 	public WebElement searchkey;
 
-	@FindBy(xpath = "//button[@type='submit']//*[name()='svg']")
+	@FindBy(css = "path._34RNph")
 	public WebElement searchIcon;
 
 	@FindBy(xpath = "//button[@class='_2KpZ6l _2U9uOA _3v1-ww']")
@@ -38,18 +40,36 @@ public class Cart {
 	@FindBy(xpath = "//div[@class='_16FRp0']")
 	public WebElement soldMsg;
 
+	@FindBy(css = "div._3g_HeN")
+	public WebElement count;
+
 	public void search(String keyword) {
-		searchkey.sendKeys(keyword);
+
+		waitForElementTobeClickable(searchkey);		
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		try {
+			WebElement searchkey = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input._3704LK")));
+			searchkey.clear();
+			searchkey.sendKeys(keyword);
+
+		} catch (Exception e) {
+			WebElement searchkey = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input._3704LK")));
+			searchkey.clear();
+			searchkey.sendKeys(keyword);
+		}
+		
+		waitForElementTobeClickable(searchIcon);
 		searchIcon.click();
 	}
 
 	public void click_product() {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		List<WebElement> results = driver.findElements(By.className("_2r_T1I"));
-		results.get(results.size() - 1).click();
+		List<WebElement> results = driver.findElements(By.className("_4rR01T"));
+		waitForElementTobeClickable(results.get(0));
+		results.get(0).click();
 	}
 
-	public void clickAddTocart() {
+	public String clickAddTocart() {
 		((JavascriptExecutor) driver).executeScript("scroll(0,400)");
 		String currentHandle = driver.getWindowHandle();
 		Set<String> handleSet = driver.getWindowHandles();
@@ -58,7 +78,10 @@ public class Cart {
 				driver.switchTo().window(handle);
 			}
 		}
+		waitForElementTobeClickable(addtocart);
 		addtocart.click();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		return driver.getTitle();
 	}
 
 	public void removeFromCart() {
@@ -77,4 +100,13 @@ public class Cart {
 		return soldMsg.getText();
 	}
 
+	public int verifycount() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		int num = Integer.parseInt(count.getText());
+		return num;
+	}
+
+	protected void waitForElementTobeClickable(WebElement webElement) {
+		new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(webElement));
+	}
 }
