@@ -4,10 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Properties;
 
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -48,6 +47,9 @@ public class BaseTest {
 	static FileInputStream fis2 = null;
 	static Properties prop1 = new Properties();
 	static Properties prop2 = new Properties();
+	static FileReadExcel fileExcel;
+	
+
 	public static final Logger logger = Logger.getLogger(BaseTest.class);
 
 	public static ExtentReports extent;
@@ -68,37 +70,34 @@ public class BaseTest {
 		}
 	}
 
-	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile", "cart", "wishlist", "product" })
 	public void setExtent() {
 		extent = new ExtentReports(".\\Reports\\extentreport.html");
 		logger.info("Extent Reporting is  Initiated");
+		fileExcel = new FileReadExcel(".\\Resources\\TestCasesFile.xlsx");
 	}
 
-	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
-	public void getTestData() throws EncryptedDocumentException, InvalidFormatException, IOException {
-		FileReadExcel testData = FileReadExcel.getData();
-		name = testData.name.replace("\"", "");
-		mobNo = testData.mobNo.replace("\"", "");
-		pwd = testData.pwd.replace("\"", "");
-		nameval = testData.nameval.replace("\"", "");
-		mob = testData.mob.replace("\"", "");
-		pin = testData.pin.replace("\"", "");
-		invalidpin = testData.invalidpin.replace("\"", "");
-		ad1 = testData.ad1.replace("\"", "");
-		ad2 = testData.ad2;
-		cty = testData.cty;
-		st = testData.st;
-	}
+	/*
+	 * @BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile"
+	 * ,"cart","wishlist"}) public void getTestData() throws
+	 * EncryptedDocumentException, InvalidFormatException, IOException {
+	 * FileReadExcel testData = FileReadExcel.getData(); name =
+	 * testData.name.replace("\"", ""); mobNo = testData.mobNo.replace("\"", "");
+	 * pwd = testData.pwd.replace("\"", ""); nameval =
+	 * testData.nameval.replace("\"", ""); mob = testData.mob.replace("\"", ""); pin
+	 * = testData.pin.replace("\"", ""); invalidpin =
+	 * testData.invalidpin.replace("\"", ""); ad1 = testData.ad1.replace("\"", "");
+	 * ad2 = testData.ad2; cty = testData.cty; st = testData.st; }
+	 */
 
-	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
+	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile", "cart", "wishlist", "product" })
 	public void endReport() {
 		extent.flush();
 		extent.close();
 		logger.info("Extent Reporting  is Finished");
-
 	}
 
-	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
+	@BeforeSuite(groups = { "Login", "Logout", "validlogin", "profile", "cart", "wishlist", "product" })
 	public static void initializeWebdriver() {
 		if (prop1.getProperty("Browser").equalsIgnoreCase("chrome")) {
 			System.setProperty(prop1.getProperty("chromeDriverProperty"), prop1.getProperty("chromeDriverPath"));
@@ -118,13 +117,20 @@ public class BaseTest {
 		}
 	}
 
-	@BeforeMethod(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
-	public static void navigateToGoogleSearchPage() {
-
+	@BeforeMethod(groups = { "Login", "Logout", "validlogin", "profile", "cart", "wishlist" })
+	public static void navigateToFlipkart(Method m) {
+//        Test t = m.getAnnotation(Test.class);
+//        System.out.println(t.groups()[0]);//or however you want to use it.
 		driver.get(prop1.getProperty("loginurl"));
 	}
 
-	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
+	@BeforeMethod(groups = { "product" })
+
+	public static void navigateToFlipkartlogin(Method m) {
+		driver.get(prop1.getProperty("login"));
+	}
+
+	@AfterSuite(groups = { "Login", "Logout", "validlogin", "profile", "cart", "wishlist", "product" })
 	public static void closebrowser() {
 //		driver.close();
 //		driver.quit();
@@ -132,7 +138,7 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod(groups = { "Login", "Logout", "validlogin", "profile" ,"cart","wishlist"})
+	@AfterMethod(groups = { "Login", "Logout", "validlogin", "profile", "cart", "wishlist", "product" })
 	public void attachScreenshot(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String screenshotPath = Screenshot.captureScreenshot(driver, result.getName());

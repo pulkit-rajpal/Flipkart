@@ -22,7 +22,7 @@ public class HomePageTest extends BaseTest {
 		login.enterPassword(pwd);
 		login.click_LoginButton();
 		extentTest = extent.startTest("Verify Scroll  on the Home Page");
-		// home.scroll();
+		home.scroll();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0,100)");
 		extentTest.log(LogStatus.PASS, "Scrolling on Home Page  Test Case Passed");

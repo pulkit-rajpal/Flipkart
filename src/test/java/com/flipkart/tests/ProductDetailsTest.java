@@ -2,6 +2,7 @@ package com.flipkart.tests;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
@@ -16,8 +17,14 @@ public class ProductDetailsTest extends BaseTest {
 
 	public static Logger logger = LogManager.getLogger(ProductDetailsTest.class);
 
-	@Test(priority = 0)
+	public static String testPageData = "ProductDetailsTestData";
+
+	@Test(groups = "product")
 	public void checkImageDisplayed() {
+		String testName = "relevantProducts";
+		HashMap<String, String> testData = new HashMap<String, String>();
+		testData = fileExcel.getRowTestData(testPageData, testName);
+
 		logger.info("Test :: Check Image of Product Displayed Test Case Started");
 		extentTest = extent.startTest("Verify that an Image is Displayed corresponding to a Product");
 		ProductDetails prodDetail = new ProductDetails(driver);
@@ -30,8 +37,12 @@ public class ProductDetailsTest extends BaseTest {
 		logger.info("Test :: Check Image of Product Displayed Test Case Ended");
 	}
 
-	@Test(priority = 0)
+	@Test(groups = "product")
 	public void changeColorofProduct() {
+		String testName = "relevantProducts";
+		HashMap<String, String> testData = new HashMap<String, String>();
+		testData = fileExcel.getRowTestData(testPageData, testName);
+
 		logger.info("Test :: Check Change color  of Product Displayed Test Case Started");
 		extentTest = extent.startTest("Verify that the User can change the Color of the Particular Product Like Shirt");
 		ProductDetails prodDetail = new ProductDetails(driver);

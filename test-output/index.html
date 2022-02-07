@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.WishlistTest" class="method navigator-link" hash-for-method="addTowishlist">addTowishlist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.HomePageTest" class="method navigator-link" hash-for-method="srcollHome">srcollHome</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.WishlistTest" class="method navigator-link" hash-for-method="getProductsInwishlist">getProductsInwishlist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,17 +133,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.flipkart.tests.HomePageTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.flipkart.tests.WishlistTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="srcollHome">
-                  </a> <!-- srcollHome -->
-                  <span class="method-name">srcollHome</span>
+                  <a name="addTowishlist">
+                  </a> <!-- addTowishlist -->
+                  <span class="method-name">addTowishlist</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping this Test Case as The Execution is Not Required
+	at com.flipkart.utils.ExecutionRequired.checkExecutionRequired(ExecutionRequired.java:10)
+	at com.flipkart.tests.WishlistTest.addTowishlist(WishlistTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.flipkart.tests.WishlistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getProductsInwishlist">
+                  </a> <!-- getProductsInwishlist -->
+                  <span class="method-name">getProductsInwishlist</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,11 +182,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;profile&quot;/&gt;
+        &lt;include name=&quot;wishlist&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.flipkart.tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.flipkart.tests.WishlistTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -176,10 +211,14 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">profile</span>
+              <span class="test-group-name">wishlist</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">srcollHome</span>
+                <span class="method-in-group-name">addTowishlist</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getProductsInwishlist</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,16 +238,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'srcollHome')
-data.setCell(0, 2, 'com.flipkart.tests.HomePageTest')
-data.setCell(0, 3, 852);
+data.setCell(0, 1, 'getProductsInwishlist')
+data.setCell(0, 2, 'com.flipkart.tests.WishlistTest')
+data.setCell(0, 3, 9321);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addTowishlist')
+data.setCell(1, 2, 'com.flipkart.tests.WishlistTest')
+data.setCell(1, 3, 45);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 852 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,38 +277,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.flipkart.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.flipkart.tests.WishlistTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">getTestData</span>
+                <span class="method-name">initializeWebdriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
-                <span class="method-name">initializeWebdriver</span>
-                <span class="method-start">1039 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-suite before">
                 <span class="method-name">setExtent</span>
-                <span class="method-start">7572 ms</span>
+                <span class="method-start">3106 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">navigateToGoogleSearchPage</span>
-                <span class="method-start">7766 ms</span>
+                <span class="method-name">navigateToFlipkart(public void com.flipkart.tests.WishlistTest.addTowishlist())</span>
+                <span class="method-start">5183 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">srcollHome</span>
-                <span class="method-start">10878 ms</span>
+                <span class="method-name">addTowishlist</span>
+                <span class="method-start">11810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">attachScreenshot([TestResult name=srcollHome status=SUCCESS method=HomePageTest.srcollHome()[pri:20, instance:com.fli...)</span>
-                <span class="method-start">11738 ms</span>
+                <span class="method-name">attachScreenshot([TestResult name=addTowishlist status=SKIP method=WishlistTest.addTowishlist()[pri:0, instance:com.f...)</span>
+                <span class="method-start">11866 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToFlipkart(public void com.flipkart.tests.WishlistTest.getProductsInwishlist())</span>
+                <span class="method-start">11869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getProductsInwishlist</span>
+                <span class="method-start">14563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">attachScreenshot([TestResult name=getProductsInwishlist status=SUCCESS method=WishlistTest.getProductsInwishlist()[pr...)</span>
+                <span class="method-start">23889 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">11811 ms</span>
+                <span class="method-start">23967 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">11812 ms</span>
+                <span class="method-start">23968 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

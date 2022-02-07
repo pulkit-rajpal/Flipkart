@@ -44,21 +44,19 @@ public class Cart {
 	public WebElement count;
 
 	public void search(String keyword) {
-
+		
 		waitForElementTobeClickable(searchkey);		
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		System.out.println(keyword);
+	/*	WebDriverWait wait = new WebDriverWait(driver, 15);
 		try {
 			WebElement searchkey = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input._3704LK")));
-			searchkey.clear();
 			searchkey.sendKeys(keyword);
 
 		} catch (Exception e) {
 			WebElement searchkey = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input._3704LK")));
-			searchkey.clear();
 			searchkey.sendKeys(keyword);
 		}
-		
-		waitForElementTobeClickable(searchIcon);
+		*/
 		searchIcon.click();
 	}
 

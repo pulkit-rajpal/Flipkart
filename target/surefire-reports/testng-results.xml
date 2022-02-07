@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-06T21:19:48 IST" name="Suite" finished-at="2022-02-06T21:19:54 IST" duration-ms="6398">
+    <groups>
+      <group name="profile">
+        <method signature="HomePageTest.srcollHome()[pri:6, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" name="srcollHome" class="com.flipkart.tests.HomePageTest"/>
+      </group> <!-- profile -->
+    </groups>
+    <test started-at="2022-02-06T21:19:48 IST" name="Test" finished-at="2022-02-06T21:19:54 IST" duration-ms="6398">
+      <class name="com.flipkart.tests.HomePageTest">
+        <test-method is-config="true" signature="getTestData()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:39 IST" name="getTestData" finished-at="2022-02-06T21:19:40 IST" duration-ms="1089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestData -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:40 IST" name="initializeWebdriver" finished-at="2022-02-06T21:19:47 IST" duration-ms="6965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:47 IST" name="setExtent" finished-at="2022-02-06T21:19:48 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:48 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-06T21:19:53 IST" duration-ms="5533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToGoogleSearchPage -->
+        <test-method signature="srcollHome()[pri:6, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:53 IST" name="srcollHome" finished-at="2022-02-06T21:19:54 IST" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- srcollHome -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:54 IST" name="attachScreenshot" finished-at="2022-02-06T21:19:54 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=srcollHome status=SUCCESS method=HomePageTest.srcollHome()[pri:6, instance:com.flipkart.tests.HomePageTest@45ac5f9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:54 IST" name="closebrowser" finished-at="2022-02-06T21:19:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:54 IST" name="endReport" finished-at="2022-02-06T21:19:55 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.flipkart.tests.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

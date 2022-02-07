@@ -16,7 +16,7 @@ public class HomePage {
 	}
 
 	public void scroll() {
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0,100)");
 	}

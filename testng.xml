@@ -4,7 +4,7 @@
 	<test thread-count="5" name="Test">
 		<groups>
 			<run>
-				<include name="profile" />
+				<include name="wishlist" />
 			</run>
 		</groups>
 
@@ -12,7 +12,10 @@
 			<!--	<class name="com.flipkart.tests.LoginTest" /> -->
 			<!--	<class name="com.flipkart.tests.LogoutTest" /> -->
 			<!--	<class name="com.flipkart.tests.AddressTest" /> -->
-			<class name="com.flipkart.tests.HomePageTest" />
+			<!-- <class name="com.flipkart.tests.HomePageTest" /> -->
+			<!--<class name="com.flipkart.tests.ProductTest" />-->
+			<!--<class name="com.flipkart.tests.WishlistTest" />-->
+			<class name="com.flipkart.tests.WishlistTest" />
 
 		</classes>
 	</test> <!-- Test -->
