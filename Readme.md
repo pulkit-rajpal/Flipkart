@@ -1,4 +1,3 @@
-
 # Flipkart Automation Framework 
 
 Flipkart Demo Automation Framework is the 
@@ -6,6 +5,9 @@ Framework for the Testing various
 Functionalities for the Flipkart Website  
 
 (private github Repo)
+
+
+git clone https://github.com/pulkit-rajpal/Flipkart.git
 
 ## Running Tests
 
@@ -16,20 +18,18 @@ Running test case with CHROME with NORMAL & HEADLESS MODE
 
 Run Terminal in Root Folder
 (\Flipkart>)
-```bash
-mvn run test
+
+Running test case  
+
 ```
-
-Running test case with CHROME with NORMAL & HEADLESS MODE 
-
-```bash
-
+mvn install
+mvn clean test 
 ```
 
 
 ## Environment 
 
-Python Virtual Environment 
+Java Runtime Environment 
 
 ## Description
 
@@ -49,15 +49,40 @@ Python Virtual Environment
 - @quite - to Quite the browser
 
 **Login Test**:
-- The main class which defines the logging Test
+-- *validLogin*  -> 
+-- *invalidLogin* -> 
 
 **Logout Test** : Includes Test
-- to verify the logout after Login  
+-- *logout*  -> to verify the logout after Login  
+
+
+**HomePage Test** : Includes Test
+-- *logout*  -> to verify the logout after Login  
+
   
  **Product Test** : Includes test
+ 
+ 
+-- **relevantProducts** -> wewewe wewe we we 
+-- *sortProductByPriceHtoL* ->
+-- *sortProductByPriceLtoH* ->
+-- *chooseProductBrand* ->
+-- *chooseProductRating* ->
+
+
 - to verify Ordering Products 
  
-**Product Sort** : Includes test
+**Product Details Test** : Includes test
+
+
+
+- to verify Sort product High to Low value
+- to verify Sort product Low to High value
+
+
+
+
+**Product Details Test** : Includes test
 - to verify Sort product High to Low value
 - to verify Sort product Low to High value
 

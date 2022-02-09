@@ -1,14 +1,12 @@
 com\flipkart\pages\Product.class
 com\flipkart\pages\FlipkartProfile.class
-com\flipkart\utils\ExcelToPojoUtils.class
-com\flipkart\utils\TestListners.class
 com\flipkart\utils\Screenshot.class
 com\flipkart\pages\Cart.class
 com\flipkart\pages\HomePage.class
+com\flipkart\utils\ExecutionRequired.class
 com\flipkart\pages\BasePage.class
 com\flipkart\pages\Login.class
 com\flipkart\pages\Logout.class
-com\flipkart\utils\Sort.class
 com\flipkart\pages\ProductDetails.class
 com\flipkart\pages\Address.class
 com\flipkart\utils\TestData.class

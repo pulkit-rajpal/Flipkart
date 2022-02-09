@@ -1,55 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-06T21:19:48 IST" name="Suite" finished-at="2022-02-06T21:19:54 IST" duration-ms="6398">
+  <suite started-at="2022-02-09T11:34:57 IST" name="Suite" finished-at="2022-02-09T11:35:56 IST" duration-ms="59218">
     <groups>
-      <group name="profile">
-        <method signature="HomePageTest.srcollHome()[pri:6, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" name="srcollHome" class="com.flipkart.tests.HomePageTest"/>
-      </group> <!-- profile -->
+      <group name="cart">
+        <method signature="CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@3b96c42e]" name="addToCart" class="com.flipkart.tests.CartTest"/>
+        <method signature="CartTest.deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@3b96c42e]" name="deletefromCart" class="com.flipkart.tests.CartTest"/>
+      </group> <!-- cart -->
+      <group name="home">
+        <method signature="HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" name="dropDownElectronics" class="com.flipkart.tests.HomePageTest"/>
+      </group> <!-- home -->
     </groups>
-    <test started-at="2022-02-06T21:19:48 IST" name="Test" finished-at="2022-02-06T21:19:54 IST" duration-ms="6398">
+    <test started-at="2022-02-09T11:34:57 IST" name="Test" finished-at="2022-02-09T11:35:56 IST" duration-ms="59218">
       <class name="com.flipkart.tests.HomePageTest">
-        <test-method is-config="true" signature="getTestData()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:39 IST" name="getTestData" finished-at="2022-02-06T21:19:40 IST" duration-ms="1089" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTestData -->
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:40 IST" name="initializeWebdriver" finished-at="2022-02-06T21:19:47 IST" duration-ms="6965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:47 IST" name="setExtent" finished-at="2022-02-06T21:19:48 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:56 IST" name="setExtent" finished-at="2022-02-09T11:34:57 IST" duration-ms="615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="navigateToGoogleSearchPage()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:48 IST" name="navigateToGoogleSearchPage" finished-at="2022-02-06T21:19:53 IST" duration-ms="5533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGoogleSearchPage -->
-        <test-method signature="srcollHome()[pri:6, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:53 IST" name="srcollHome" finished-at="2022-02-06T21:19:54 IST" duration-ms="792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- srcollHome -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:54 IST" name="attachScreenshot" finished-at="2022-02-06T21:19:54 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:57 IST" name="attachScreenshot" finished-at="2022-02-09T11:34:57 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=srcollHome status=SUCCESS method=HomePageTest.srcollHome()[pri:6, instance:com.flipkart.tests.HomePageTest@45ac5f9b] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:54 IST" name="closebrowser" finished-at="2022-02-06T21:19:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:57 IST" name="initializeWebdriver" finished-at="2022-02-09T11:34:59 IST" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:59 IST" name="navigateToFlipkart" finished-at="2022-02-09T11:35:04 IST" duration-ms="5159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:35:04 IST" name="dropDownElectronics" finished-at="2022-02-09T11:35:06 IST" duration-ms="1739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownElectronics -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:35:06 IST" name="closebrowser" finished-at="2022-02-09T11:35:07 IST" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.HomePageTest@45ac5f9b]" started-at="2022-02-06T21:19:54 IST" name="endReport" finished-at="2022-02-06T21:19:55 IST" duration-ms="646" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:35:56 IST" name="endReport" finished-at="2022-02-09T11:35:57 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.flipkart.tests.HomePageTest -->
+      <class name="com.flipkart.tests.CartTest">
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:07 IST" name="attachScreenshot" finished-at="2022-02-09T11:35:07 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@3b96c42e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:07 IST" name="initializeWebdriver" finished-at="2022-02-09T11:35:11 IST" duration-ms="3328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:11 IST" name="navigateToFlipkart" finished-at="2022-02-09T11:35:13 IST" duration-ms="2382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="addToCart()[pri:14, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:13 IST" name="addToCart" finished-at="2022-02-09T11:35:24 IST" duration-ms="11058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:24 IST" name="closebrowser" finished-at="2022-02-09T11:35:25 IST" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:25 IST" name="attachScreenshot" finished-at="2022-02-09T11:35:25 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@3b96c42e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:25 IST" name="initializeWebdriver" finished-at="2022-02-09T11:35:27 IST" duration-ms="2466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:27 IST" name="navigateToFlipkart" finished-at="2022-02-09T11:35:29 IST" duration-ms="2235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:29 IST" name="deletefromCart" finished-at="2022-02-09T11:35:55 IST" duration-ms="25905" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div._3dsJAO._24d-qY.FhkMJZ"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PULKITRAJPAL', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
+*** Element info: {Using=css selector, value=div._3dsJAO._24d-qY.FhkMJZ}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div._3dsJAO._24d-qY.FhkMJZ"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PULKITRAJPAL', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
+*** Element info: {Using=css selector, value=div._3dsJAO._24d-qY.FhkMJZ}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy26.click(Unknown Source)
+at com.flipkart.pages.Cart.removeFromCart(Cart.java:98)
+at com.flipkart.tests.CartTest.deletefromCart(CartTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletefromCart -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:55 IST" name="closebrowser" finished-at="2022-02-09T11:35:56 IST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.flipkart.tests.CartTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

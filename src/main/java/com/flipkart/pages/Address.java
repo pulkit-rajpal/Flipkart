@@ -17,13 +17,17 @@ public class Address extends BasePage {
 
 	WebDriver driver;
 
+	/*
+	 * Address Page for getting Locators like name,address and other input text
+	 * fields
+	 */
+
 	public Address(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
 
-//	@FindBy(how = How.XPATH, using = "//div[@class='NS64GK _1MZ7_i']")
-//	public WebElement manageAddress;
+	/* Declare web elements using different locators. */
 
 	@FindBy(how = How.XPATH, using = "//div[@class='_1QhEVk']")
 	public WebElement addAddress;
@@ -58,20 +62,24 @@ public class Address extends BasePage {
 	@FindBy(how = How.XPATH, using = "//div[@class='_2x29pL']")
 	public WebElement errorMsg;
 
+	/*
+	 * Various Click Methods for performing the required task for executing Address
+	 * Test Completely .
+	 */
+
 	public void click_ManageAddress() {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement manageAddress = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//div[normalize-space()='Manage Addresses']")));
-		System.out.println(manageAddress.getText());
 		manageAddress.click();
 	}
 
 	public void click_add() {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_5, TimeUnit.SECONDS);
 		addAddress.click();
 	}
 
-	public void add_details(String nameval, String mob, String pin, String ad1, String ad2, String cty) {
+	public void add_details(String nameval, String mob, String pin, String ad1, String ad2) {
 		name.sendKeys(nameval);
 		phone.sendKeys(mob);
 		pincode.sendKeys(pin);
@@ -85,12 +93,12 @@ public class Address extends BasePage {
 	}
 
 	public String getErrorMsg() {
-		waitForElementToBeVisible(errorMsg,driver);
+		waitForElementToBeVisible(errorMsg, driver);
 		return errorMsg.getText();
 	}
 
 	public void gotoProfile() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_10);
 		WebElement menu = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[@class='exehdJ'][normalize-space()='pulkit']")));
 		Actions actions = new Actions(driver);
@@ -100,6 +108,5 @@ public class Address extends BasePage {
 		actions.moveToElement(prof);
 		actions.click().build().perform();
 	}
-
 
 }

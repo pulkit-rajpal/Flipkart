@@ -15,10 +15,12 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class ProductTest extends BaseTest {
 
-	public static Logger logger = LogManager.getLogger(ProductTest.class);
+	/* Initializing Logger */
+
+	private static Logger logger = LogManager.getLogger(ProductTest.class);
 	private static String testPageData = "ProductTestData";
 
-	@Test(groups = "product")
+	@Test(groups = { "product" }, priority = 6, enabled = true)
 	public void relevantProducts() {
 		String testName = "relevantProducts";
 		HashMap<String, String> testData = new HashMap<String, String>();
@@ -36,7 +38,7 @@ public class ProductTest extends BaseTest {
 		logger.info("Test :: Relevent Product Test Case Ended");
 	}
 
-	@Test(groups = "product")
+	@Test(groups = { "product" }, priority = 7, enabled = true)
 	public void sortProductByPriceHtoL() {
 
 		String testName = "sortProductByPriceHtoL";
@@ -57,7 +59,7 @@ public class ProductTest extends BaseTest {
 
 	}
 
-	@Test(groups = "product")
+	@Test(groups = { "product" }, priority = 8, enabled = true)
 	public void sortProductByPriceLtoH() {
 
 		String testName = "sortProductByPriceLtoH";
@@ -76,7 +78,7 @@ public class ProductTest extends BaseTest {
 		logger.info("Test :: Sorting By price Low to High  Test Case Started");
 	}
 
-	@Test(groups = "product")
+	@Test(groups = { "product" }, priority = 9, enabled = true)
 	public void chooseProductBrand() {
 		String testName = "chooseProductBrand";
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
@@ -92,7 +94,7 @@ public class ProductTest extends BaseTest {
 		logger.info("Test :: Filter  Product By Brand  Test Case Ended");
 	}
 
-	@Test(groups = "product")
+	@Test(groups = { "product" }, priority = 10, enabled = true)
 	public void chooseProductRating() {
 		String testName = "chooseProductRating";
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
@@ -105,6 +107,8 @@ public class ProductTest extends BaseTest {
 		extent.endTest(extentTest);
 		Assert.assertEquals(driver.getTitle(),
 				"Iphone- Buy Products Online at Best Price in India - All Categories | Flipkart.com");
+		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
+
 		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
 		logger.info("Test :: Filter  Product By Rating  Test Case Ended");
 	}

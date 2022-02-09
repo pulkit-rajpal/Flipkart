@@ -14,13 +14,20 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Cart {
+public class Cart extends BasePage{
 	WebDriver driver;
+
+	/*
+	 * Cart Page for getting Locators like search key,remove buttons and other input
+	 * text fields
+	 */
 
 	public Cart(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
+
+	/* Declare web elements using different locators. */
 
 	@FindBy(how = How.CSS, using = "input._3704LK")
 	public WebElement searchkey;
@@ -28,13 +35,13 @@ public class Cart {
 	@FindBy(css = "path._34RNph")
 	public WebElement searchIcon;
 
-	@FindBy(xpath = "//button[@class='_2KpZ6l _2U9uOA _3v1-ww']")
-	public WebElement addtocart;
+//	@FindBy(xpath = "//button[@class='_2KpZ6l _2U9uOA _3v1-ww']")
+//	public WebElement addtocart;
 
-	@FindBy(xpath = "//div[normalize-space()='Remove']")
+	@FindBy(css = "div._3dsJAO")
 	public WebElement remove;
 
-	@FindBy(xpath = "//div[@class='_3dsJAO _24d-qY FhkMJZ']")
+	@FindBy(css = "div._3dsJAO._24d-qY.FhkMJZ")
 	public WebElement removeButton;
 
 	@FindBy(xpath = "//div[@class='_16FRp0']")
@@ -43,31 +50,29 @@ public class Cart {
 	@FindBy(css = "div._3g_HeN")
 	public WebElement count;
 
-	public void search(String keyword) {
-		
-		waitForElementTobeClickable(searchkey);		
-		System.out.println(keyword);
-	/*	WebDriverWait wait = new WebDriverWait(driver, 15);
-		try {
-			WebElement searchkey = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input._3704LK")));
-			searchkey.sendKeys(keyword);
+	/*
+	 * Various Click Methods for performing the required task for executing Cart
+	 * Test Completely .
+	 */
 
-		} catch (Exception e) {
-			WebElement searchkey = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input._3704LK")));
-			searchkey.sendKeys(keyword);
-		}
-		*/
+	public void search(String keyword) {
+		driver.navigate().refresh();
+		searchkey.sendKeys(keyword);
 		searchIcon.click();
 	}
 
 	public void click_product() {
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		List<WebElement> results = driver.findElements(By.className("_4rR01T"));
-		waitForElementTobeClickable(results.get(0));
+
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_5, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_15);
+		// List<WebElement> results = driver.findElements(By.className("_4rR01T"));
+		List<WebElement> results = wait
+				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("_4rR01T")));
 		results.get(0).click();
 	}
 
 	public String clickAddTocart() {
+		driver.navigate().refresh();
 		((JavascriptExecutor) driver).executeScript("scroll(0,400)");
 		String currentHandle = driver.getWindowHandle();
 		Set<String> handleSet = driver.getWindowHandles();
@@ -76,13 +81,19 @@ public class Cart {
 				driver.switchTo().window(handle);
 			}
 		}
-		waitForElementTobeClickable(addtocart);
+		driver.manage().timeouts().pageLoadTimeout(IMPLITICIT_WAIT_10, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_15);
+		WebElement addtocart = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button._2KpZ6l._2U9uOA._3v1-ww")));
 		addtocart.click();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		return driver.getTitle();
+		WebElement placeorder = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button._2KpZ6l._2ObVJD._3AWRsL")));
+
+		return placeorder.getText();
 	}
 
 	public void removeFromCart() {
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_20, TimeUnit.SECONDS);
 		remove.click();
 		removeButton.click();
 	}
@@ -99,12 +110,20 @@ public class Cart {
 	}
 
 	public int verifycount() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_10, TimeUnit.SECONDS);
 		int num = Integer.parseInt(count.getText());
 		return num;
 	}
 
 	protected void waitForElementTobeClickable(WebElement webElement) {
-		new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(webElement));
+		new WebDriverWait(driver, IMPLITICIT_WAIT_10).until(ExpectedConditions.elementToBeClickable(webElement));
+	}
+
+	public void gotoCart() {
+
+		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_15);
+		WebElement cart = wait.until(ExpectedConditions.elementToBeClickable(By.className("KK-o3G")));
+		cart.click();
+
 	}
 }

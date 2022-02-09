@@ -4,21 +4,21 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="wishlist"/>
+        <include name="home"/>
       </run>
     </groups>
     <classes>
-      <class name="com.flipkart.tests.WishlistTest">
+      <class name="com.flipkart.tests.HomePageTest">
         <methods>
+          <include name="dropDownElectronics"/>
           <include name="attachScreenshot"/>
           <include name="initializeWebdriver"/>
           <include name="closebrowser"/>
           <include name="endReport"/>
-          <include name="addTowishlist"/>
           <include name="navigateToFlipkart"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- com.flipkart.tests.WishlistTest -->
+      </class> <!-- com.flipkart.tests.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

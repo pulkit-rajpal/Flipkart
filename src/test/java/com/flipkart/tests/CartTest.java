@@ -2,6 +2,8 @@ package com.flipkart.tests;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.HashMap;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -9,54 +11,80 @@ import org.testng.annotations.Test;
 
 import com.flipkart.pages.Cart;
 import com.flipkart.pages.Login;
+import com.flipkart.utils.ExecutionRequired;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class CartTest extends BaseTest {
 
-	public static Logger logger = LogManager.getLogger(CartTest.class);
+	/* Initializing Logger */
 
-	@Test(groups = "cart", priority = 8)
-	public void addToCart() throws InterruptedException {
+	private static Logger logger = LogManager.getLogger(CartTest.class);
+	private static String testPageData = "CartTestData";
+
+	@Test(groups = { "cart" }, priority = 14, enabled = true)
+	public void addToCart() {
+		String testName = "addToCart";
+		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
+		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
+		extentTest = extent.startTest("Verify adding a Product to Cart");
 		logger.info("Test :: Add To Cart Test Case Started");
-		extentTest = extent.startTest("Verify Add a product To Cart");
+		Cart cart = new Cart(driver);
+		logger.info("Test :: " + testName + " -Signing Up to Flipkart Web App");
 		Login login = new Login(driver);
-		Cart cart = new Cart(driver);
-		login.entermobileNo(mobNo);
-		login.enterPassword(pwd);
+		login.entermobileNo(testData.get("mob").replace("\"", ""));
+		login.enterPassword(testData.get("pwd"));
 		login.click_LoginButton();
-		cart.search("micromax");
+		cart.search(testData.get("key"));
 		cart.click_product();
+		logger.info("Test :: " + testName + " -Clicked to view the Product");
 		String title = cart.clickAddTocart();
-		Assert.assertEquals(title, "Shopping Cart | Flipkart.com");
+		extentTest.log(LogStatus.PASS, testName + " -Test has Passed");
+		Assert.assertEquals(title, "PLACE ORDER");
 		extent.endTest(extentTest);
-		extentTest.log(LogStatus.PASS, "Add To Cart Test Passed ");
 		logger.info("Test :: Add To Cart Test Case Ended");
+
 	}
 
-	@Test(groups = "cart", priority = 9, enabled = false)
+	@Test(groups = { "cart" }, priority = 15, enabled = true)
 	public void deletefromCart() {
+		String testName = "deletefromCart";
+		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
+		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
+		extentTest = extent.startTest("Verify Removing a Product from  Cart");
 		logger.info("Test :: Delete From  Cart Test Case Started");
-		extentTest = extent.startTest("Verify Add a product To Cart");
 		Cart cart = new Cart(driver);
-		gotoCart();
+		Login login = new Login(driver);
+		logger.info("Test :: " + testName + " Signing Up to Flipkart Web App");
+		login.entermobileNo(testData.get("mob").replace("\"", ""));
+		login.enterPassword(testData.get("pwd"));
+		login.click_LoginButton();
+		cart.gotoCart();
 		cart.removeFromCart();
+		logger.info("Test :: " + testName + " -Product Removed from cart");
+		assertEquals(driver.getTitle(), "Shopping Cart | Flipkart.com");
+		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
 		extent.endTest(extentTest);
-		extentTest.log(LogStatus.PASS, "Delete From  Cart Test Passed");
 		logger.info("Test :: Delete From  Cart Test Case Ended");
-
 	}
 
-	@Test(groups = "cart", priority = 10, enabled = false)
-	public void addtoCartOutofStock() {
-		logger.info("Test :: Unable Add to Cart for Out of Stock Product Test Case Started");
-		extentTest = extent.startTest("Verify Add a product To Cart");
-		Cart cart = new Cart(driver);
-		cart.search("iphone 13 se 128");
-		cart.click_product();
-		extent.endTest(extentTest);
-		assertEquals(cart.verifySoldOut(), "Sold Out");
-		extentTest.log(LogStatus.PASS, "Unable Add to Cart for Out of Stock Product Test Case Passed");
-		logger.info("Test :: Unable Add to Cart for Out of Stock Product Test Case Ended");
-	}
+	/*
+	 * @Test(groups = { "cart" }, priority = 10, enabled = false) public void
+	 * addtoCartOutofStock() { String testName = "addtoCartOutofStock"; fileExcel =
+	 * new FileReadExcel(".\\Resources\\TestCasesFile.xlsx"); HashMap<String,
+	 * String> testData = fileExcel.getRowTestData(testPageData, testName);
+	 * ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
+	 * extentTest = extent.startTest("Verify adding a valid Address"); logger.
+	 * info("Test :: Unable Add to Cart for Out of Stock Product Test Case Started"
+	 * ); extentTest = extent.startTest("Verify Add a product To Cart"); Login login
+	 * = new Login(driver); Cart cart = new Cart(driver);
+	 * login.entermobileNo(testData.get("mob").replace("\"", ""));
+	 * login.enterPassword(testData.get("pwd")); login.click_LoginButton();
+	 * cart.search(testData.get("key")); cart.click_product();
+	 * extent.endTest(extentTest); assertEquals(cart.verifySoldOut(), "Sold Out");
+	 * extentTest.log(LogStatus.PASS,
+	 * "Unable Add to Cart for Out of Stock Product Test Case Passed"); logger.
+	 * info("Test :: Unable Add to Cart for Out of Stock Product Test Case Ended");
+	 * }
+	 */
 
 }

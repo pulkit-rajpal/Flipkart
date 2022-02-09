@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.tests.WishlistTest">
+      <class name="com.flipkart.tests.FlipkartProfileInfoTest">
         <methods>
+          <include name="changeName"/>
           <include name="attachScreenshot"/>
           <include name="initializeWebdriver"/>
           <include name="closebrowser"/>
           <include name="endReport"/>
           <include name="navigateToFlipkartlogin"/>
-          <include name="addTowishlist"/>
           <include name="navigateToFlipkart"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- com.flipkart.tests.WishlistTest -->
+      </class> <!-- com.flipkart.tests.FlipkartProfileInfoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

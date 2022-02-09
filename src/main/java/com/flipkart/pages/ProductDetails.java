@@ -14,14 +14,21 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ProductDetails {
+public class ProductDetails extends BasePage{
 
 	WebDriver driver;
+
+	/*
+	 * ProductDetails Page for getting Locators which will be required to perform
+	 * task fields
+	 */
 
 	public ProductDetails(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
+
+	/* Declare web elements using different locators. */
 
 	@FindBy(how = How.XPATH, using = "//img[@class='_2r_T1I _396QI4']")
 	public WebElement img;
@@ -29,8 +36,19 @@ public class ProductDetails {
 	@FindBy(how = How.XPATH, using = "")
 	public WebElement getSize;
 
+	@FindBy(how = How.XPATH, using = "//input[@placeholder='Search for products, brands and more']")
+	public WebElement searchkey;
+
+	@FindBy(xpath = "//button[@type='submit']//*[name()='svg']")
+	public WebElement searchIcon;
+
+	/*
+	 * Various task Methods for performing the required task for executing ProductDetails
+	 * Test Completely .
+	 */
+
 	public boolean checkimage() {
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_5, TimeUnit.SECONDS);
 		((JavascriptExecutor) driver).executeScript("scroll(0,400)");
 		String currentHandle = driver.getWindowHandle();
 		Set<String> handleSet = driver.getWindowHandles();
@@ -42,12 +60,23 @@ public class ProductDetails {
 		return img.isDisplayed();
 	}
 
-	public void changecolor() {
-
+	public void search(String keyword) {
+		searchkey.sendKeys(keyword);
+		searchIcon.click();
 	}
 
-	public boolean changeSize() {
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+	public void click_product() {
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_5, TimeUnit.SECONDS);
+
+		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_10);
+		List<WebElement> results = wait
+				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("img._2r_T1I")));
+		results.get(0).click();
+	}
+
+	public boolean changecolor() {
+
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_5, TimeUnit.SECONDS);
 		String currentHandle = driver.getWindowHandle();
 		Set<String> handleSet = driver.getWindowHandles();
 		for (String handle : handleSet) {
@@ -55,19 +84,41 @@ public class ProductDetails {
 				driver.switchTo().window(handle);
 			}
 		}
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_10);
+		List<WebElement> colorElements = wait.until(
+				ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("div._2C41yO._1pH70n._31hAvz")));
+		WebElement colorElement = colorElements.get(0);
+		colorElement.click();
+		List<WebElement> colorElements1 = wait.until(
+				ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("div._2C41yO._1pH70n._31hAvz")));
+		WebElement colorElement1 = colorElements1.get(0);
+		if (colorElement1.isEnabled()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean changeSize() {
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_5, TimeUnit.SECONDS);
+		String currentHandle = driver.getWindowHandle();
+		Set<String> handleSet = driver.getWindowHandles();
+		for (String handle : handleSet) {
+			if (!handle.equalsIgnoreCase(currentHandle)) {
+				driver.switchTo().window(handle);
+			}
+		}
+		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_10);
 		List<WebElement> sizElements = wait
 				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("a._1fGeJ5._2UVyXR._31hAvz")));
 		WebElement sizElement = sizElements.get(0);
 		sizElement.click();
-		WebDriverWait wait1 = new WebDriverWait(driver, 10);
-		WebElement wbElement = wait1.until(ExpectedConditions.presenceOfElementLocated(
-				By.xpath("//*[@id=\"container\"]/div/div[3]/div[1]/div[2]/div[7]/div[1]/div/div[2]/div[2]/span[2]")));
+		WebDriverWait wait1 = new WebDriverWait(driver,IMPLITICIT_WAIT_10);
+		WebElement wbElement = wait1
+				.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a._1fGeJ5.PP89tw._2UVyXR._31hAvz")));
 		WebElement wbElement1 = wait1
 				.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a._1fGeJ5._2UVyXR._31hAvz")));
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		System.out.println(wbElement1.getText());
-		System.out.println(wbElement.getText().replace("Size:", ""));
 		if (wbElement1.getText().compareTo(wbElement.getText().replace("Size:", "")) == 0) {
 			return true;
 		} else {

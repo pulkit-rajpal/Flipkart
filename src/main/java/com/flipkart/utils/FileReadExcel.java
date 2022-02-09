@@ -1,18 +1,12 @@
 package com.flipkart.utils;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.List;
 
-import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.common.usermodel.Hyperlink;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
@@ -27,17 +21,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class FileReadExcel {
 
-	public String name;
-	public String mobNo;
-	public String pwd;
-	public String nameval;
-	public String mob;
-	public String pin;
-	public String invalidpin;
-	public String ad1;
-	public String ad2;
-	public String cty;
-	public String st;
+	/*
+	 * Functions To Read From the Excel & get Data rows   
+	 * for the particular test case
+	 */
+	
 
 	public String path;
 	public FileInputStream fis = null;
@@ -383,7 +371,7 @@ public class FileReadExcel {
 			sheet = workbook.getSheet(sheetName);
 			XSSFCellStyle style = workbook.createCellStyle();
 			style.setFillForegroundColor(CellStyle.SOLID_FOREGROUND);
-			//XSSFCreationHelper createHelper = workbook.getCreationHelper();
+			// XSSFCreationHelper createHelper = workbook.getCreationHelper();
 			style.setFillPattern(FillPatternType.NO_FILL);
 
 			for (int i = 0; i < getRowCount(sheetName); i++) {
@@ -489,12 +477,6 @@ public class FileReadExcel {
 		}
 
 		return testData;
-	}
-
-	public static FileReadExcel getData() throws IOException, EncryptedDocumentException, InvalidFormatException {
-		InputStream file = new FileInputStream(new File(".\\Resources\\TestCasesFile.xlsx"));
-		List<FileReadExcel> testData = ExcelToPojoUtils.toPojo(FileReadExcel.class, file);
-		return testData.get(0);
 	}
 
 }

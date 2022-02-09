@@ -4,19 +4,18 @@
 	<test thread-count="5" name="Test">
 		<groups>
 			<run>
-				<include name="wishlist" />
+				<include name="home" />
+				<include name="Login" />
+				<include name="Logout" />
+				<include name="product" />
+				<include name="cart" />
+				<include name="profile" />
+				<include name="wishlit" />
 			</run>
 		</groups>
-
 		<classes>
-			<!--	<class name="com.flipkart.tests.LoginTest" /> -->
-			<!--	<class name="com.flipkart.tests.LogoutTest" /> -->
-			<!--	<class name="com.flipkart.tests.AddressTest" /> -->
-			<!-- <class name="com.flipkart.tests.HomePageTest" /> -->
-			<!--<class name="com.flipkart.tests.ProductTest" />-->
-			<!--<class name="com.flipkart.tests.WishlistTest" />-->
-			<class name="com.flipkart.tests.WishlistTest" />
-
+			<class name="com.flipkart.tests.HomePageTest" />
+			<class name="com.flipkart.tests.CartTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

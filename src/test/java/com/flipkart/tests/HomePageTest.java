@@ -1,33 +1,37 @@
 package com.flipkart.tests;
 
+import static org.testng.Assert.assertEquals;
+
+import java.util.HashMap;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import com.flipkart.pages.HomePage;
-import com.flipkart.pages.Login;
+import com.flipkart.utils.ExecutionRequired;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class HomePageTest extends BaseTest {
 
-	public static Logger logger = LogManager.getLogger(HomePageTest.class);
+	/* Initializing Logger */
 
-	@Test(groups = "profile", priority = 6)
-	public void srcollHome() {
-		logger.info("Test :: Scrolling on Home Page  Test Case Started");
+	private static Logger logger = LogManager.getLogger(HomePageTest.class);
+	private static String testPageData = "HomePageTestData";
+
+	@Test(groups = { "home" }, priority = 0, enabled = true)
+	public void dropDownElectronics() {
+		String testName = "dropDownElectronics";
+		logger.info("Test :: dropDownElectronics on Home Page  Test Case Started");
+		extentTest = extent.startTest("Verify that the User is able to access Dropdown");
+		HashMap<String, String> testData = new HashMap<String, String>();
+		testData = fileExcel.getRowTestData(testPageData, testName);
+		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
 		HomePage home = new HomePage(driver);
-		Login login = new Login(driver);
-		login.entermobileNo(mobNo);
-		login.enterPassword(pwd);
-		login.click_LoginButton();
-		extentTest = extent.startTest("Verify Scroll  on the Home Page");
-		home.scroll();
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollTo(0,100)");
-		extentTest.log(LogStatus.PASS, "Scrolling on Home Page  Test Case Passed");
+		home.clickdropdown();
+		assertEquals(home.verifydropdown(), "Best of Electronics");
+		extentTest.log(LogStatus.PASS, "dropDownElectronics on Home Page  Test Case Passed");
+		logger.info("Test :: dropDownElectronics on Home Page  Test Case Ended");
 		extent.endTest(extentTest);
-		logger.info("Test :: Scrolling on Home Page  Test Case Ended");
 	}
-
 }

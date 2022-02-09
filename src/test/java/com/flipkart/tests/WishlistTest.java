@@ -17,10 +17,12 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class WishlistTest extends BaseTest {
 
-	public static Logger logger = LogManager.getLogger(WishlistTest.class);
-	public static String testPageData = "WishlistTestData";
+	/* Initializing Logger */
 
-	@Test(groups = "wishlist")
+	private static Logger logger = LogManager.getLogger(WishlistTest.class);
+	private static String testPageData = "WishlistTestData";
+
+	@Test(groups = { "wishlist" }, priority = 20, enabled = true)
 	public void addTowishlist() {
 		String testName = "addTowishlist";
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
@@ -28,6 +30,8 @@ public class WishlistTest extends BaseTest {
 		logger.info("Test :: Adding   Product to  Wishlist  Test Case Started");
 		extentTest = extent.startTest("Verify Add a product To WishList");
 		Login login = new Login(driver);
+		logger.info("Test :: " + testName + " Signing Up to Flipkart Web App");
+		
 		Wishlist wish = new Wishlist(driver);
 		login.entermobileNo(testData.get("mob").replace("\"", ""));
 		login.enterPassword(testData.get("pwd"));
@@ -42,7 +46,7 @@ public class WishlistTest extends BaseTest {
 		logger.info("Test :: Adding Product to Wishlist  Test Case Ended");
 	}
 
-	@Test(groups = "wishlist")
+	@Test(groups = { "wishlist" }, priority = 21, enabled = true)
 	public void getProductsInwishlist() {
 		String testName = "getProductsInwishlist";
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
@@ -51,14 +55,16 @@ public class WishlistTest extends BaseTest {
 		extentTest = extent.startTest("Verify Remove a product To WishList");
 		Wishlist wish = new Wishlist(driver);
 		Login login = new Login(driver);
+		logger.info("Test :: " + testName + " Signing Up to Flipkart Web App");
 		login.entermobileNo(testData.get("mob").replace("\"", ""));
 		login.enterPassword(testData.get("pwd"));
 		login.click_LoginButton();
 		wish.gotToWishlist();
 		logger.info("Products in the Wishlist");
-		List<WebElement> productList= wish.getProductInWishlist();
+		List<WebElement> productList = wish.getProductInWishlist();
 		logger.info(productList.get(0).getText());
-		Assert.assertTrue(productList.size()>0);
+		Assert.assertTrue(productList.size() > 0);
+		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
 		extent.endTest(extentTest);
 		logger.info("Test :: Removing  Product from  Wishlist  Test Case Ended");
 	}
