@@ -131,3 +131,37 @@
 [INFO ] 2022-02-09 11:35:24.468 [main] CartTest - Test :: Add To Cart Test Case Ended
 [INFO ] 2022-02-09 11:35:29.991 [main] CartTest - Test :: Delete From  Cart Test Case Started
 [INFO ] 2022-02-09 11:35:29.993 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:22:04.074 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 12:22:05.219 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 12:22:08.950 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 12:22:08.962 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:22:13.438 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 12:22:16.071 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 12:22:19.936 [main] CartTest - Test :: Delete From  Cart Test Case Started
+[INFO ] 2022-02-09 12:22:19.937 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:26:19.133 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 12:26:19.153 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:26:23.388 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 12:26:25.734 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 12:26:29.503 [main] CartTest - Test :: Delete From  Cart Test Case Started
+[INFO ] 2022-02-09 12:26:29.504 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:28:03.937 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 12:28:03.983 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:28:12.349 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 12:28:16.267 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 12:28:21.320 [main] CartTest - Test :: Delete From  Cart Test Case Started
+[INFO ] 2022-02-09 12:28:21.325 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:28:56.316 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 12:28:56.376 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:29:04.132 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 12:29:07.441 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 12:29:11.811 [main] CartTest - Test :: Delete From  Cart Test Case Started
+[INFO ] 2022-02-09 12:29:11.815 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:32:51.586 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 12:32:51.634 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:32:59.633 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 12:33:03.809 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 12:33:09.214 [main] CartTest - Test :: Delete From  Cart Test Case Started
+[INFO ] 2022-02-09 12:33:09.217 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 12:33:16.365 [main] CartTest - Test :: deletefromCart -Product Removed from cart
+[INFO ] 2022-02-09 12:33:16.386 [main] CartTest - Test :: Delete From  Cart Test Case Ended

@@ -5,20 +5,26 @@
     <groups>
       <run>
         <include name="home"/>
+        <include name="Login"/>
+        <include name="Logout"/>
+        <include name="product"/>
+        <include name="cart"/>
+        <include name="profile"/>
+        <include name="wishlit"/>
       </run>
     </groups>
     <classes>
-      <class name="com.flipkart.tests.HomePageTest">
+      <class name="com.flipkart.tests.CartTest">
         <methods>
-          <include name="dropDownElectronics"/>
           <include name="attachScreenshot"/>
           <include name="initializeWebdriver"/>
           <include name="closebrowser"/>
+          <include name="deletefromCart"/>
           <include name="endReport"/>
           <include name="navigateToFlipkart"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- com.flipkart.tests.HomePageTest -->
+      </class> <!-- com.flipkart.tests.CartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

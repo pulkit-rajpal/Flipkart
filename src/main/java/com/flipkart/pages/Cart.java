@@ -95,7 +95,7 @@ public class Cart extends BasePage{
 	public void removeFromCart() {
 		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_20, TimeUnit.SECONDS);
 		remove.click();
-		removeButton.click();
+		//removeButton.click();
 	}
 
 	public String verifySoldOut() {
@@ -120,10 +120,9 @@ public class Cart extends BasePage{
 	}
 
 	public void gotoCart() {
-
 		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_15);
 		WebElement cart = wait.until(ExpectedConditions.elementToBeClickable(By.className("KK-o3G")));
-		cart.click();
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", cart);
 
 	}
 }

@@ -15,7 +15,14 @@
 		</groups>
 		<classes>
 			<class name="com.flipkart.tests.HomePageTest" />
+			<class name="com.flipkart.tests.LoginTest" />
+			<class name="com.flipkart.tests.LogoutTest" />
+			<class name="com.flipkart.tests.ProductTest" />
+			<class name="com.flipkart.tests.ProductDetailsTest" />
 			<class name="com.flipkart.tests.CartTest" />
+			<class name="com.flipkart.tests.AddressTest" />
+			<class name="com.flipkart.tests.FlipkartProfileInfoTest" />
+			<class name="com.flipkart.tests.WishlistTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
