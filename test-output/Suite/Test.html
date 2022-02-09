@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/5</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 09 12:32:43 IST 2022</td>
+<td>Started on:</td><td>Wed Feb 09 12:55:57 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34115 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7358 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>product Logout profile wishlit Login cart home </td>
 </tr><tr>
@@ -67,6 +67,164 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.flipkart.tests.HomePageTest.navigateToFlipkartlogin()'><b>navigateToFlipkartlogin</b><br>Test class: com.flipkart.tests.HomePageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1750120280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1750120280'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.HomePageTest@4982cc36</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.initializeWebdriver()'><b>initializeWebdriver</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.initializeWebdriver()'><b>initializeWebdriver</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.attachScreenshot()'><b>attachScreenshot</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.closebrowser()'><b>closebrowser</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.navigateToFlipkart()'><b>navigateToFlipkart</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.attachScreenshot()'><b>attachScreenshot</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.navigateToFlipkart()'><b>navigateToFlipkart</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.navigateToFlipkart()'><b>navigateToFlipkart</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.initializeWebdriver()'><b>initializeWebdriver</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.navigateToFlipkart()'><b>navigateToFlipkart</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.closebrowser()'><b>closebrowser</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.closebrowser()'><b>closebrowser</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.initializeWebdriver()'><b>initializeWebdriver</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.initializeWebdriver()'><b>initializeWebdriver</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.navigateToFlipkart()'><b>navigateToFlipkart</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.attachScreenshot()'><b>attachScreenshot</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.closebrowser()'><b>closebrowser</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.attachScreenshot()'><b>attachScreenshot</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.attachScreenshot()'><b>attachScreenshot</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.closebrowser()'><b>closebrowser</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>-1644391565</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,15 +233,228 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.flipkart.tests.CartTest.addToCart()'><b>addToCart</b><br>Test class: com.flipkart.tests.CartTest</td>
+<td title='com.flipkart.tests.HomePageTest.dropDownElectronics()'><b>dropDownElectronics</b><br>Test class: com.flipkart.tests.HomePageTest</td>
 <td></td>
-<td>12</td>
-<td>com.flipkart.tests.CartTest@1941a8ff</td></tr>
+<td>1</td>
+<td>com.flipkart.tests.HomePageTest@4982cc36</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.flipkart.tests.CartTest.deletefromCart()'><b>deletefromCart</b><br>Test class: com.flipkart.tests.CartTest</td>
-<td></td>
-<td>7</td>
-<td>com.flipkart.tests.CartTest@1941a8ff</td></tr>
+<td title='com.flipkart.tests.ProductTest.chooseProductRating()'><b>chooseProductRating</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace830381116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace830381116'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.sortProductByPriceHtoL()'><b>sortProductByPriceHtoL</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152487396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1152487396'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.sortProductByPriceLtoH()'><b>sortProductByPriceLtoH</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1821580597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821580597'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.relevantProducts()'><b>relevantProducts</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1004390006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1004390006'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.chooseProductBrand()'><b>chooseProductBrand</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace62182667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace62182667'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.flipkart.tests.ProductTest@77258e59</td></tr>
 </table><p>
 </body>
 </html>

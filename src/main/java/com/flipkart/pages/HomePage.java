@@ -32,6 +32,7 @@ public class HomePage extends BasePage{
 	 */
 
 	public void clickdropdown() {
+		driver.get(prop1.getProperty("loginurl"));
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ESCAPE).build().perform();
 		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_15);

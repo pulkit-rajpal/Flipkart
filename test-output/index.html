@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods,  5 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.ProductTest" class="method navigator-link" hash-for-method="chooseProductBrand">chooseProductBrand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.ProductTest" class="method navigator-link" hash-for-method="chooseProductRating">chooseProductRating</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.ProductTest" class="method navigator-link" hash-for-method="relevantProducts">relevantProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.ProductTest" class="method navigator-link" hash-for-method="sortProductByPriceHtoL">sortProductByPriceHtoL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.ProductTest" class="method navigator-link" hash-for-method="sortProductByPriceLtoH">sortProductByPriceLtoH</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +138,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.CartTest" class="method navigator-link" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.CartTest" class="method navigator-link" hash-for-method="deletefromCart">deletefromCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.flipkart.tests.HomePageTest" class="method navigator-link" hash-for-method="dropDownElectronics">dropDownElectronics</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -124,24 +153,90 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.flipkart.tests.CartTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.flipkart.tests.ProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addToCart">
-                  </a> <!-- addToCart -->
-                  <span class="method-name">addToCart</span>
+                  <a name="chooseProductBrand">
+                  </a> <!-- chooseProductBrand -->
+                  <span class="method-name">chooseProductBrand</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="deletefromCart">
-                  </a> <!-- deletefromCart -->
-                  <span class="method-name">deletefromCart</span>
+                  <a name="chooseProductRating">
+                  </a> <!-- chooseProductRating -->
+                  <span class="method-name">chooseProductRating</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="relevantProducts">
+                  </a> <!-- relevantProducts -->
+                  <span class="method-name">relevantProducts</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortProductByPriceHtoL">
+                  </a> <!-- sortProductByPriceHtoL -->
+                  <span class="method-name">sortProductByPriceHtoL</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortProductByPriceLtoH">
+                  </a> <!-- sortProductByPriceLtoH -->
+                  <span class="method-name">sortProductByPriceLtoH</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.flipkart.tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDownElectronics">
+                  </a> <!-- dropDownElectronics -->
+                  <span class="method-name">dropDownElectronics</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,7 +264,8 @@
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.flipkart.tests.CartTest&quot;/&gt;
+      &lt;class name=&quot;com.flipkart.tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.flipkart.tests.ProductTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -183,7 +279,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,14 +290,34 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">cart</span>
+              <span class="test-group-name">home</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">addToCart</span>
+                <span class="method-in-group-name">dropDownElectronics</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">product</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">chooseProductBrand</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">deletefromCart</span>
+                <span class="method-in-group-name">chooseProductRating</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">relevantProducts</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sortProductByPriceHtoL</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sortProductByPriceLtoH</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -221,20 +337,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addToCart')
-data.setCell(0, 2, 'com.flipkart.tests.CartTest')
-data.setCell(0, 3, 12264);
+data.setCell(0, 1, 'dropDownElectronics')
+data.setCell(0, 2, 'com.flipkart.tests.HomePageTest')
+data.setCell(0, 3, 1641);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deletefromCart')
-data.setCell(1, 2, 'com.flipkart.tests.CartTest')
-data.setCell(1, 3, 7180);
+data.setCell(1, 1, 'chooseProductRating')
+data.setCell(1, 2, 'com.flipkart.tests.ProductTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sortProductByPriceHtoL')
+data.setCell(2, 2, 'com.flipkart.tests.ProductTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sortProductByPriceLtoH')
+data.setCell(3, 2, 'com.flipkart.tests.ProductTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'relevantProducts')
+data.setCell(4, 2, 'com.flipkart.tests.ProductTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'chooseProductBrand')
+data.setCell(5, 2, 'com.flipkart.tests.ProductTest')
+data.setCell(5, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,9 +381,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.flipkart.tests.ProductTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -260,54 +401,140 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.flipkart.tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.flipkart.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">attachScreenshot([TestResult name={null} status=CREATED method=CartTest.addToCart()[pri:14, instance:com.flipkart.tes...)</span>
-                <span class="method-start">738 ms</span>
+                <span class="method-name">attachScreenshot([TestResult name={null} status=CREATED method=HomePageTest.dropDownElectronics()[pri:0, instance:com...)</span>
+                <span class="method-start">917 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializeWebdriver</span>
-                <span class="method-start">740 ms</span>
+                <span class="method-start">920 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToFlipkart</span>
-                <span class="method-start">5261 ms</span>
+                <span class="method-start">3278 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addToCart</span>
-                <span class="method-start">9119 ms</span>
+                <span class="method-name">dropDownElectronics</span>
+                <span class="method-start">5900 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">21386 ms</span>
+                <span class="method-start">7545 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.flipkart.tests.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">attachScreenshot([TestResult name={null} status=CREATED method=CartTest.deletefromCart()[pri:15, instance:com.flipkar...)</span>
-                <span class="method-start">22251 ms</span>
+                <span class="method-name">attachScreenshot</span>
+                <span class="method-start">8201 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializeWebdriver</span>
-                <span class="method-start">22251 ms</span>
+                <span class="method-start">8204 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToFlipkart</span>
-                <span class="method-start">24117 ms</span>
+                <span class="method-start">8205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deletefromCart</span>
-                <span class="method-start">26780 ms</span>
+                <span class="method-name">relevantProducts</span>
+                <span class="method-start">8208 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">33961 ms</span>
+                <span class="method-start">8214 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">attachScreenshot</span>
+                <span class="method-start">8216 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeWebdriver</span>
+                <span class="method-start">8218 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToFlipkart</span>
+                <span class="method-start">8219 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortProductByPriceHtoL</span>
+                <span class="method-start">8220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">8223 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">attachScreenshot</span>
+                <span class="method-start">8226 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeWebdriver</span>
+                <span class="method-start">8228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToFlipkart</span>
+                <span class="method-start">8229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortProductByPriceLtoH</span>
+                <span class="method-start">8230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">8233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">attachScreenshot</span>
+                <span class="method-start">8234 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeWebdriver</span>
+                <span class="method-start">8234 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToFlipkart</span>
+                <span class="method-start">8235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">chooseProductBrand</span>
+                <span class="method-start">8237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">8240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">attachScreenshot</span>
+                <span class="method-start">8242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeWebdriver</span>
+                <span class="method-start">8243 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToFlipkart</span>
+                <span class="method-start">8244 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">chooseProductRating</span>
+                <span class="method-start">8245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">8247 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.flipkart.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">34878 ms</span>
+                <span class="method-start">8289 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,79 +1,416 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="8" passed="1" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-09T12:32:43 IST" name="Suite" finished-at="2022-02-09T12:33:17 IST" duration-ms="34115">
+  <suite started-at="2022-02-09T12:55:57 IST" name="Suite" finished-at="2022-02-09T12:56:05 IST" duration-ms="7358">
     <groups>
-      <group name="cart">
-        <method signature="CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@1941a8ff]" name="addToCart" class="com.flipkart.tests.CartTest"/>
-        <method signature="CartTest.deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@1941a8ff]" name="deletefromCart" class="com.flipkart.tests.CartTest"/>
-      </group> <!-- cart -->
+      <group name="product">
+        <method signature="ProductTest.chooseProductBrand()[pri:9, instance:com.flipkart.tests.ProductTest@77258e59]" name="chooseProductBrand" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.chooseProductRating()[pri:10, instance:com.flipkart.tests.ProductTest@77258e59]" name="chooseProductRating" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.relevantProducts()[pri:6, instance:com.flipkart.tests.ProductTest@77258e59]" name="relevantProducts" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.sortProductByPriceHtoL()[pri:7, instance:com.flipkart.tests.ProductTest@77258e59]" name="sortProductByPriceHtoL" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.sortProductByPriceLtoH()[pri:8, instance:com.flipkart.tests.ProductTest@77258e59]" name="sortProductByPriceLtoH" class="com.flipkart.tests.ProductTest"/>
+      </group> <!-- product -->
+      <group name="home">
+        <method signature="HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" name="dropDownElectronics" class="com.flipkart.tests.HomePageTest"/>
+      </group> <!-- home -->
     </groups>
-    <test started-at="2022-02-09T12:32:43 IST" name="Test" finished-at="2022-02-09T12:33:17 IST" duration-ms="34115">
-      <class name="com.flipkart.tests.CartTest">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:32:42 IST" name="setExtent" finished-at="2022-02-09T12:32:43 IST" duration-ms="718" status="PASS">
+    <test started-at="2022-02-09T12:55:57 IST" name="Test" finished-at="2022-02-09T12:56:05 IST" duration-ms="7358">
+      <class name="com.flipkart.tests.ProductTest">
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="attachScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565114" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="initializeWebdriver" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565117" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="navigateToFlipkart" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565118" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="relevantProducts()[pri:6, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="relevantProducts" finished-at="2022-02-09T12:56:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relevantProducts -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="closebrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565127" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="attachScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565129" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="initializeWebdriver" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565131" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="navigateToFlipkart" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565132" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="sortProductByPriceHtoL()[pri:7, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="sortProductByPriceHtoL" finished-at="2022-02-09T12:56:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortProductByPriceHtoL -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="closebrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565136" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="attachScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565139" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="initializeWebdriver" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565141" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="navigateToFlipkart" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565142" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="sortProductByPriceLtoH()[pri:8, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="sortProductByPriceLtoH" finished-at="2022-02-09T12:56:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortProductByPriceLtoH -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="closebrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565146" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="attachScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565147" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="initializeWebdriver" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565147" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="navigateToFlipkart" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565148" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="chooseProductBrand()[pri:9, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="chooseProductBrand" finished-at="2022-02-09T12:56:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseProductBrand -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="closebrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="attachScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565155" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="initializeWebdriver" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565156" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="navigateToFlipkart" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565157" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method signature="chooseProductRating()[pri:10, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="chooseProductRating" finished-at="2022-02-09T12:56:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseProductRating -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@77258e59]" started-at="2022-02-09T12:56:05 IST" name="closebrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565160" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.flipkart.tests.ProductTest -->
+      <class name="com.flipkart.tests.HomePageTest">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:55:56 IST" name="setExtent" finished-at="2022-02-09T12:55:57 IST" duration-ms="889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:32:43 IST" name="attachScreenshot" finished-at="2022-02-09T12:32:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:55:57 IST" name="attachScreenshot" finished-at="2022-02-09T12:55:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@1941a8ff] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:32:43 IST" name="initializeWebdriver" finished-at="2022-02-09T12:32:47 IST" duration-ms="4521" status="PASS">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:55:57 IST" name="initializeWebdriver" finished-at="2022-02-09T12:56:00 IST" duration-ms="2358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:32:47 IST" name="navigateToFlipkart" finished-at="2022-02-09T12:32:51 IST" duration-ms="3858" status="PASS">
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:56:00 IST" name="navigateToFlipkart" finished-at="2022-02-09T12:56:02 IST" duration-ms="2621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToFlipkart -->
-        <test-method signature="addToCart()[pri:14, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:32:51 IST" name="addToCart" finished-at="2022-02-09T12:33:03 IST" duration-ms="12264" status="PASS">
+        <test-method signature="dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:56:02 IST" name="dropDownElectronics" finished-at="2022-02-09T12:56:04 IST" duration-ms="1641" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:33:03 IST" name="closebrowser" finished-at="2022-02-09T12:33:04 IST" duration-ms="862" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:33:04 IST" name="attachScreenshot" finished-at="2022-02-09T12:33:04 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@1941a8ff] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:33:04 IST" name="initializeWebdriver" finished-at="2022-02-09T12:33:06 IST" duration-ms="1866" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:33:06 IST" name="navigateToFlipkart" finished-at="2022-02-09T12:33:09 IST" duration-ms="2663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToFlipkart -->
-        <test-method signature="deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:33:09 IST" name="deletefromCart" finished-at="2022-02-09T12:33:16 IST" duration-ms="7180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletefromCart -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:33:16 IST" name="closebrowser" finished-at="2022-02-09T12:33:17 IST" duration-ms="870" status="PASS">
+        </test-method> <!-- dropDownElectronics -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:56:04 IST" name="closebrowser" finished-at="2022-02-09T12:56:05 IST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.CartTest@1941a8ff]" started-at="2022-02-09T12:33:17 IST" name="endReport" finished-at="2022-02-09T12:33:17 IST" duration-ms="395" status="PASS">
+        <test-method is-config="true" signature="navigateToFlipkartlogin(java.lang.reflect.Method)[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:56:05 IST" name="navigateToFlipkartlogin" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565109" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeGroups annotated navigateToFlipkartlogin.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.ConfigInvoker.invokeBeforeGroupsConfigurations(ConfigInvoker.java:149)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:522)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.HomePageTest@4982cc36]" started-at="2022-02-09T12:56:05 IST" name="endReport" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644391565202" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.flipkart.tests.CartTest -->
+      </class> <!-- com.flipkart.tests.HomePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

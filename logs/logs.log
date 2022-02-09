@@ -165,3 +165,7 @@
 [INFO ] 2022-02-09 12:33:09.217 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
 [INFO ] 2022-02-09 12:33:16.365 [main] CartTest - Test :: deletefromCart -Product Removed from cart
 [INFO ] 2022-02-09 12:33:16.386 [main] CartTest - Test :: Delete From  Cart Test Case Ended
+[INFO ] 2022-02-09 12:52:59.405 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 12:53:01.002 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 12:56:02.839 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 12:56:04.451 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended

@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Method;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -130,7 +129,7 @@ public class BaseTest {
 	/* Navigating to the Login page of the Flipkart */
 
 	@BeforeMethod(groups = { "product" })
-	public static void navigateToFlipkartlogin(Method m) {
+	public static void navigateToFlipkartlogin() {
 		driver.get(prop1.getProperty("login"));
 	}
 
@@ -154,7 +153,5 @@ public class BaseTest {
 			extentTest.log(LogStatus.PASS, "Test Case Passed Successfully!!!");
 		}
 	}
-
-
 
 }
