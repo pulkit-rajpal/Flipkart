@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 09 11:34:57 IST 2022</td>
+<td>Started on:</td><td>Wed Feb 09 17:17:21 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59218 ms)</td>
+<tr><td>Total time:</td><td>217 seconds (217197 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>product Logout profile wishlit Login cart home </td>
+<td>Included groups:</td><td>product wishlist Logout profile Login cart home </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -75,62 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.flipkart.tests.CartTest.deletefromCart()'><b>deletefromCart</b><br>Test class: com.flipkart.tests.CartTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div._3dsJAO._24d-qY.FhkMJZ&quot;}
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PULKITRAJPAL&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
-*** Element info: {Using=css selector, value=div._3dsJAO._24d-qY.FhkMJZ}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at com.flipkart.pages.Cart.removeFromCart(Cart.java:98)
-	at com.flipkart.tests.CartTest.deletefromCart(CartTest.java:62)
+<td title='com.flipkart.tests.LoginTest.invalidLogin()'><b>invalidLogin</b><br>Test class: com.flipkart.tests.LoginTest</td>
+<td><div><pre>java.lang.AssertionError: did not expect [Your username or password is incorrect] but found [Your username or password is incorrect]
+	at com.flipkart.tests.LoginTest.invalidLogin(LoginTest.java:62)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace213095762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace213095762'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div._3dsJAO._24d-qY.FhkMJZ&quot;}
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PULKITRAJPAL&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
-*** Element info: {Using=css selector, value=div._3dsJAO._24d-qY.FhkMJZ}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at com.flipkart.pages.Cart.removeFromCart(Cart.java:98)
-	at com.flipkart.tests.CartTest.deletefromCart(CartTest.java:62)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21331934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21331934'><pre>java.lang.AssertionError: did not expect [Your username or password is incorrect] but found [Your username or password is incorrect]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failEquals(Assert.java:1041)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+	at org.testng.Assert.assertNotEquals(Assert.java:1531)
+	at org.testng.Assert.assertNotEquals(Assert.java:1535)
+	at com.flipkart.tests.LoginTest.invalidLogin(LoginTest.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,8 +120,8 @@ Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>25</td>
-<td>com.flipkart.tests.CartTest@3b96c42e</td></tr>
+<td>0</td>
+<td>com.flipkart.tests.LoginTest@32c4e8b2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -175,15 +131,105 @@ Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.flipkart.tests.HomePageTest.dropDownElectronics()'><b>dropDownElectronics</b><br>Test class: com.flipkart.tests.HomePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.flipkart.tests.HomePageTest@a4add54</td></tr>
-<tr>
 <td title='com.flipkart.tests.CartTest.addToCart()'><b>addToCart</b><br>Test class: com.flipkart.tests.CartTest</td>
 <td></td>
-<td>11</td>
-<td>com.flipkart.tests.CartTest@3b96c42e</td></tr>
+<td>7</td>
+<td>com.flipkart.tests.CartTest@7ae42ce3</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.sortProductByPriceHtoL()'><b>sortProductByPriceHtoL</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.ProductTest@598bd2ba</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductDetailsTest.changeSizeofProduct()'><b>changeSizeofProduct</b><br>Test class: com.flipkart.tests.ProductDetailsTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.ProductDetailsTest@5a755cc1</td></tr>
+<tr>
+<td title='com.flipkart.tests.HomePageTest.verifyTitle()'><b>verifyTitle</b><br>Test class: com.flipkart.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.flipkart.tests.HomePageTest@66c92293</td></tr>
+<tr>
+<td title='com.flipkart.tests.FlipkartProfileInfoTest.changeName()'><b>changeName</b><br>Test class: com.flipkart.tests.FlipkartProfileInfoTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.FlipkartProfileInfoTest@484094a5</td></tr>
+<tr>
+<td title='com.flipkart.tests.FlipkartProfileInfoTest.changeGender()'><b>changeGender</b><br>Test class: com.flipkart.tests.FlipkartProfileInfoTest</td>
+<td></td>
+<td>5</td>
+<td>com.flipkart.tests.FlipkartProfileInfoTest@484094a5</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductDetailsTest.checkImageDisplayed()'><b>checkImageDisplayed</b><br>Test class: com.flipkart.tests.ProductDetailsTest</td>
+<td></td>
+<td>2</td>
+<td>com.flipkart.tests.ProductDetailsTest@5a755cc1</td></tr>
+<tr>
+<td title='com.flipkart.tests.LoginTest.validLogin()'><b>validLogin</b><br>Test class: com.flipkart.tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>com.flipkart.tests.LoginTest@32c4e8b2</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.chooseProductRating()'><b>chooseProductRating</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>1</td>
+<td>com.flipkart.tests.ProductTest@598bd2ba</td></tr>
+<tr>
+<td title='com.flipkart.tests.WishlistTest.addTowishlist()'><b>addTowishlist</b><br>Test class: com.flipkart.tests.WishlistTest</td>
+<td></td>
+<td>3</td>
+<td>com.flipkart.tests.WishlistTest@38234a38</td></tr>
+<tr>
+<td title='com.flipkart.tests.LogoutTest.logout()'><b>logout</b><br>Test class: com.flipkart.tests.LogoutTest</td>
+<td></td>
+<td>3</td>
+<td>com.flipkart.tests.LogoutTest@64bce832</td></tr>
+<tr>
+<td title='com.flipkart.tests.AddressTest.addValidAddress()'><b>addValidAddress</b><br>Test class: com.flipkart.tests.AddressTest</td>
+<td></td>
+<td>5</td>
+<td>com.flipkart.tests.AddressTest@4f5991f6</td></tr>
+<tr>
+<td title='com.flipkart.tests.WishlistTest.getProductsInwishlist()'><b>getProductsInwishlist</b><br>Test class: com.flipkart.tests.WishlistTest</td>
+<td></td>
+<td>5</td>
+<td>com.flipkart.tests.WishlistTest@38234a38</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.relevantProducts()'><b>relevantProducts</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>3</td>
+<td>com.flipkart.tests.ProductTest@598bd2ba</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.sortProductByPriceLtoH()'><b>sortProductByPriceLtoH</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.ProductTest@598bd2ba</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductDetailsTest.changeColorofProduct()'><b>changeColorofProduct</b><br>Test class: com.flipkart.tests.ProductDetailsTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.ProductDetailsTest@5a755cc1</td></tr>
+<tr>
+<td title='com.flipkart.tests.CartTest.addtoCartOutofStock()'><b>addtoCartOutofStock</b><br>Test class: com.flipkart.tests.CartTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.CartTest@7ae42ce3</td></tr>
+<tr>
+<td title='com.flipkart.tests.HomePageTest.dropDownElectronics()'><b>dropDownElectronics</b><br>Test class: com.flipkart.tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.flipkart.tests.HomePageTest@66c92293</td></tr>
+<tr>
+<td title='com.flipkart.tests.AddressTest.addInValidAddress()'><b>addInValidAddress</b><br>Test class: com.flipkart.tests.AddressTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.AddressTest@4f5991f6</td></tr>
+<tr>
+<td title='com.flipkart.tests.ProductTest.chooseProductBrand()'><b>chooseProductBrand</b><br>Test class: com.flipkart.tests.ProductTest</td>
+<td></td>
+<td>4</td>
+<td>com.flipkart.tests.ProductTest@598bd2ba</td></tr>
 </table><p>
 </body>
 </html>

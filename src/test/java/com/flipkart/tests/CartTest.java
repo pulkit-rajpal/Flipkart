@@ -67,11 +67,9 @@ public class CartTest extends BaseTest {
 	@Test(groups = { "cart" }, priority = 15, enabled = true)
 	public void addtoCartOutofStock() {
 		String testName = "addtoCartOutofStock";
-		extentTest = extent.startTest("Verify Unable Add to Cart for Out of Stock Product Test");
-
+		extentTest = extent.startTest("Verify Unable to Add to Cart for Out of Stock Product Test");
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
 		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
-		extentTest = extent.startTest("Verify Unable Add to Cart for Out of Stock Product Test");
 		logger.info("Test :: Unable Add to Cart for Out of Stock Product Test Case Started");
 		Login login = new Login(driver);
 		Cart cart = new Cart(driver);

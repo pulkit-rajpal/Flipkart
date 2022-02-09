@@ -143,7 +143,7 @@ public class BaseTest {
 
 	/* Attaching Screenshot to the Extent Report on Every Failure */
 
-	@BeforeMethod(groups = { "Login", "Logout", "home", "profile", "cart", "wishlist", "product" })
+	@AfterMethod(groups = { "Login", "Logout", "home", "profile", "cart", "wishlist", "product" })
 	public void attachScreenshot(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String screenshotPath = Screenshot.captureScreenshot(driver, result.getName());

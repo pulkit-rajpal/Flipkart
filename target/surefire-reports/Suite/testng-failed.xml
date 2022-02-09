@@ -10,21 +10,22 @@
         <include name="product"/>
         <include name="cart"/>
         <include name="profile"/>
-        <include name="wishlit"/>
+        <include name="wishlist"/>
       </run>
     </groups>
     <classes>
-      <class name="com.flipkart.tests.CartTest">
+      <class name="com.flipkart.tests.LoginTest">
         <methods>
           <include name="attachScreenshot"/>
           <include name="initializeWebdriver"/>
           <include name="closebrowser"/>
-          <include name="deletefromCart"/>
           <include name="endReport"/>
+          <include name="invalidLogin"/>
+          <include name="navigateToFlipkartlogin"/>
           <include name="navigateToFlipkart"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- com.flipkart.tests.CartTest -->
+      </class> <!-- com.flipkart.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

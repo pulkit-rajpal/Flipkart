@@ -272,3 +272,367 @@
 [INFO ] 2022-02-09 14:20:08.136 [main] CartTest - Test :: deletefromCart Signing Up to Flipkart Web App
 [INFO ] 2022-02-09 14:25:36.805 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
 [INFO ] 2022-02-09 14:25:44.190 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 14:44:59.584 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 14:45:12.935 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 14:45:12.937 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:45:31.103 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 14:45:34.648 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 14:45:44.822 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 14:45:44.824 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:45:48.024 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 14:46:55.861 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 14:46:58.504 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 14:47:02.791 [main] HomePageTest - Test :: verify Title on Home Page  Test Case Started
+[INFO ] 2022-02-09 14:47:02.795 [main] HomePageTest - Test :: verifyTitle on Home Page  Test Case Ended
+[INFO ] 2022-02-09 14:47:06.975 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 14:47:06.975 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:47:11.902 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-09 14:47:11.902 [main] LoginTest - Test :: validLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:47:14.720 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-09 14:47:19.031 [main] LogoutTest - Test :: logout Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:47:19.389 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-09 14:47:22.440 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-09 14:47:38.564 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-09 14:47:40.513 [main] ProductTest - Test :: Relevent Product Test Case Ended
+[INFO ] 2022-02-09 14:47:45.293 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-09 14:47:48.031 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Ended
+[INFO ] 2022-02-09 14:47:52.658 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-09 14:47:55.486 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Started
+[INFO ] 2022-02-09 14:47:59.855 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-09 14:48:03.776 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-09 14:48:09.081 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-09 14:48:10.060 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-09 14:48:14.162 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 14:48:16.839 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 14:48:21.045 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 14:48:24.761 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 14:48:29.412 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 14:48:29.412 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-09 14:48:32.680 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-09 14:48:32.680 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 14:48:36.558 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 14:48:36.559 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:48:39.602 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 14:48:41.843 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 14:48:45.923 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-09 14:48:49.799 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 14:48:54.133 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-09 14:48:54.134 [main] AddressTest - Test :: addValidAddress - Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:48:59.240 [main] AddressTest - Test :: addValidAddressA New Address Added to the profile
+[INFO ] 2022-02-09 14:48:59.244 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-09 14:49:04.169 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-09 14:49:04.171 [main] AddressTest - Test :: addInValidAddress -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:49:09.458 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-09 14:49:13.854 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-09 14:49:13.855 [main] FlipkartProfileInfoTest - Test :: changeName Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:49:17.708 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Ended
+[INFO ] 2022-02-09 14:49:22.928 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-09 14:49:22.929 [main] FlipkartProfileInfoTest - Test :: changeGender Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 14:49:26.726 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-09 15:50:13.144 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 15:50:18.780 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 15:50:24.831 [main] HomePageTest - Test :: verify Title on Home Page  Test Case Started
+[INFO ] 2022-02-09 15:50:24.844 [main] HomePageTest - Test :: verifyTitle on Home Page  Test Case Ended
+[INFO ] 2022-02-09 15:50:31.281 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 15:50:31.281 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:50:38.083 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-09 15:50:38.084 [main] LoginTest - Test :: validLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:50:41.566 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-09 15:50:47.997 [main] LogoutTest - Test :: logout Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:50:48.628 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-09 15:51:03.991 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-09 15:51:07.595 [main] ProductTest - Test :: Relevent Product Test Case Ended
+[INFO ] 2022-02-09 15:51:13.971 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-09 15:51:18.862 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Ended
+[INFO ] 2022-02-09 15:51:23.869 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-09 15:51:28.744 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Started
+[INFO ] 2022-02-09 15:51:35.979 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-09 15:51:42.352 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-09 15:51:48.903 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-09 15:51:52.116 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-09 15:51:58.720 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 15:52:03.298 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 15:52:11.942 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 15:52:18.363 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 15:52:32.626 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 15:52:32.626 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-09 15:52:38.858 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-09 15:52:38.858 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 15:52:44.986 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 15:52:44.989 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:52:50.917 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 15:52:54.627 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 15:53:03.942 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-09 15:53:11.046 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 15:53:18.975 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-09 15:53:18.979 [main] AddressTest - Test :: addValidAddress - Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:53:26.952 [main] AddressTest - Test :: addValidAddressA New Address Added to the profile
+[INFO ] 2022-02-09 15:53:26.960 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-09 15:53:36.889 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-09 15:53:36.891 [main] AddressTest - Test :: addInValidAddress -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:53:49.525 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-09 15:53:55.176 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-09 15:53:55.177 [main] FlipkartProfileInfoTest - Test :: changeName Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:54:00.615 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Ended
+[INFO ] 2022-02-09 15:54:07.534 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-09 15:54:07.535 [main] FlipkartProfileInfoTest - Test :: changeGender Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 15:54:13.241 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-09 16:01:07.476 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 16:01:11.724 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 16:01:17.778 [main] HomePageTest - Test :: verify Title on Home Page  Test Case Started
+[INFO ] 2022-02-09 16:01:17.791 [main] HomePageTest - Test :: verifyTitle on Home Page  Test Case Ended
+[INFO ] 2022-02-09 16:01:23.133 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 16:01:23.133 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:01:35.813 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-09 16:01:35.815 [main] LoginTest - Test :: validLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:01:39.302 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-09 16:01:47.612 [main] LogoutTest - Test :: logout Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:01:48.173 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-09 16:01:53.737 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-09 16:01:58.892 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-09 16:02:02.125 [main] ProductTest - Test :: Relevent Product Test Case Ended
+[INFO ] 2022-02-09 16:02:08.905 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-09 16:02:14.069 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Ended
+[INFO ] 2022-02-09 16:02:19.999 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-09 16:02:24.101 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Started
+[INFO ] 2022-02-09 16:02:29.657 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-09 16:02:35.254 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-09 16:02:42.492 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-09 16:02:45.380 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-09 16:02:52.574 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:02:57.073 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 16:03:06.040 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:03:12.349 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 16:03:18.705 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:03:18.705 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-09 16:03:24.073 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-09 16:03:24.074 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:03:29.610 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 16:03:29.612 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:03:35.324 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 16:03:38.789 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 16:03:46.103 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-09 16:03:53.086 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 16:03:58.127 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-09 16:03:58.132 [main] AddressTest - Test :: addValidAddress - Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:04:05.708 [main] AddressTest - Test :: addValidAddressA New Address Added to the profile
+[INFO ] 2022-02-09 16:04:05.719 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-09 16:04:11.879 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-09 16:04:11.883 [main] AddressTest - Test :: addInValidAddress -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:04:20.007 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-09 16:04:26.194 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-09 16:04:26.194 [main] FlipkartProfileInfoTest - Test :: changeName Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:04:32.036 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Ended
+[INFO ] 2022-02-09 16:04:37.884 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-09 16:04:37.885 [main] FlipkartProfileInfoTest - Test :: changeGender Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:04:43.154 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-09 16:08:03.984 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 16:08:09.488 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 16:08:16.663 [main] HomePageTest - Test :: verify Title on Home Page  Test Case Started
+[INFO ] 2022-02-09 16:08:16.676 [main] HomePageTest - Test :: verifyTitle on Home Page  Test Case Ended
+[INFO ] 2022-02-09 16:08:22.339 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 16:08:22.339 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:08:35.093 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-09 16:08:35.094 [main] LoginTest - Test :: validLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:08:40.034 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-09 16:08:46.865 [main] LogoutTest - Test :: logout Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:08:47.401 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-09 16:08:52.988 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-09 16:08:58.985 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-09 16:09:03.109 [main] ProductTest - Test :: Relevent Product Test Case Ended
+[INFO ] 2022-02-09 16:09:09.197 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-09 16:09:14.563 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Ended
+[INFO ] 2022-02-09 16:09:20.585 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-09 16:09:25.901 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Started
+[INFO ] 2022-02-09 16:09:31.663 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-09 16:09:38.087 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-09 16:09:45.745 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-09 16:09:49.869 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-09 16:09:55.597 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:10:01.684 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 16:10:08.282 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:10:16.016 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 16:10:21.998 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:10:21.999 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-09 16:10:27.930 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-09 16:10:27.931 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:10:35.892 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 16:10:35.897 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:10:43.443 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 16:10:50.679 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 16:10:58.336 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-09 16:11:05.574 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 16:11:14.500 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-09 16:11:14.502 [main] AddressTest - Test :: addValidAddress - Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:11:22.374 [main] AddressTest - Test :: addValidAddressA New Address Added to the profile
+[INFO ] 2022-02-09 16:11:22.380 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-09 16:11:29.253 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-09 16:11:29.254 [main] AddressTest - Test :: addInValidAddress -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:11:38.011 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-09 16:11:45.230 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-09 16:11:45.231 [main] FlipkartProfileInfoTest - Test :: changeName Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:12:04.552 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-09 16:12:04.552 [main] FlipkartProfileInfoTest - Test :: changeGender Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:12:09.938 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-09 16:18:17.280 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 16:18:21.913 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 16:18:29.076 [main] HomePageTest - Test :: verify Title on Home Page  Test Case Started
+[INFO ] 2022-02-09 16:18:29.083 [main] HomePageTest - Test :: verifyTitle on Home Page  Test Case Ended
+[INFO ] 2022-02-09 16:18:35.389 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 16:18:35.390 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:18:42.484 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-09 16:18:42.484 [main] LoginTest - Test :: validLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:18:45.718 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-09 16:18:51.531 [main] LogoutTest - Test :: logout Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:18:52.137 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-09 16:18:55.711 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-09 16:19:01.231 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-09 16:19:04.655 [main] ProductTest - Test :: Relevent Product Test Case Ended
+[INFO ] 2022-02-09 16:19:09.984 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-09 16:19:15.734 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Ended
+[INFO ] 2022-02-09 16:19:22.037 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-09 16:19:27.636 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Started
+[INFO ] 2022-02-09 16:19:33.808 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-09 16:19:40.262 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-09 16:19:47.609 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-09 16:19:51.200 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-09 16:19:57.975 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:20:03.298 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 16:20:10.559 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:20:16.564 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 16:20:22.251 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:20:22.252 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-09 16:20:28.615 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-09 16:20:28.615 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 16:20:34.884 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 16:20:34.889 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:20:40.667 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 16:20:44.175 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 16:20:50.787 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-09 16:20:57.504 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 16:21:04.125 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-09 16:21:04.128 [main] AddressTest - Test :: addValidAddress - Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:21:12.244 [main] AddressTest - Test :: addValidAddressA New Address Added to the profile
+[INFO ] 2022-02-09 16:21:12.260 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-09 16:21:18.406 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-09 16:21:18.409 [main] AddressTest - Test :: addInValidAddress -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:21:27.155 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-09 16:21:34.019 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-09 16:21:34.020 [main] FlipkartProfileInfoTest - Test :: changeName Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:21:41.292 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Ended
+[INFO ] 2022-02-09 16:21:46.678 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-09 16:21:46.679 [main] FlipkartProfileInfoTest - Test :: changeGender Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 16:21:53.551 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-09 17:13:04.884 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 17:13:07.782 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 17:13:12.909 [main] HomePageTest - Test :: verify Title on Home Page  Test Case Started
+[INFO ] 2022-02-09 17:13:12.914 [main] HomePageTest - Test :: verifyTitle on Home Page  Test Case Ended
+[INFO ] 2022-02-09 17:13:19.059 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 17:13:19.059 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:13:24.796 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-09 17:13:24.796 [main] LoginTest - Test :: validLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:13:26.743 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-09 17:13:31.857 [main] LogoutTest - Test :: logout Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:13:32.178 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-09 17:13:46.860 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-09 17:13:48.822 [main] ProductTest - Test :: Relevent Product Test Case Ended
+[INFO ] 2022-02-09 17:13:53.225 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-09 17:13:55.952 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Ended
+[INFO ] 2022-02-09 17:14:01.304 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-09 17:14:04.124 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Started
+[INFO ] 2022-02-09 17:14:10.159 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-09 17:14:14.311 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-09 17:14:19.271 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-09 17:14:20.415 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-09 17:14:24.621 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:14:26.844 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 17:14:32.868 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:14:35.919 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 17:14:40.229 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:14:40.229 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-09 17:14:43.216 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-09 17:14:43.216 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:14:47.792 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 17:14:47.793 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:14:52.242 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 17:14:55.214 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 17:15:01.609 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-09 17:15:08.810 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 17:15:16.447 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-09 17:15:16.459 [main] AddressTest - Test :: addValidAddress - Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:15:22.993 [main] AddressTest - Test :: addValidAddressA New Address Added to the profile
+[INFO ] 2022-02-09 17:15:23.000 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-09 17:15:28.476 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-09 17:15:28.477 [main] AddressTest - Test :: addInValidAddress -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:15:35.307 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-09 17:15:40.892 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-09 17:15:40.893 [main] FlipkartProfileInfoTest - Test :: changeName Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:15:45.458 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Ended
+[INFO ] 2022-02-09 17:15:50.723 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-09 17:15:50.724 [main] FlipkartProfileInfoTest - Test :: changeGender Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:15:54.492 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-09 17:16:00.868 [main] WishlistTest - Test :: Adding   Product to  Wishlist  Test Case Started
+[INFO ] 2022-02-09 17:16:00.869 [main] WishlistTest - Test :: addTowishlist Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:16:04.285 [main] WishlistTest - Test :: Adding Product to Wishlist  Test Case Ended
+[INFO ] 2022-02-09 17:16:18.599 [main] WishlistTest - Test :: Removing  Product from  Wishlist  Test Case Started
+[INFO ] 2022-02-09 17:16:18.600 [main] WishlistTest - Test :: getProductsInwishlist Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:16:21.696 [main] WishlistTest - Products in the Wishlist
+[INFO ] 2022-02-09 17:16:22.307 [main] WishlistTest - My Wishlist (2)
+[INFO ] 2022-02-09 17:16:22.328 [main] WishlistTest - Test :: Removing  Product from  Wishlist  Test Case Ended
+[INFO ] 2022-02-09 17:17:27.284 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Started
+[INFO ] 2022-02-09 17:17:31.015 [main] HomePageTest - Test :: dropDownElectronics on Home Page  Test Case Ended
+[INFO ] 2022-02-09 17:17:35.919 [main] HomePageTest - Test :: verify Title on Home Page  Test Case Started
+[INFO ] 2022-02-09 17:17:35.928 [main] HomePageTest - Test :: verifyTitle on Home Page  Test Case Ended
+[INFO ] 2022-02-09 17:17:41.159 [main] LoginTest - Test :: InValid Login Test Case Started
+[INFO ] 2022-02-09 17:17:41.160 [main] LoginTest - Test :: invalidLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:17:47.999 [main] LoginTest - Test :: Valid Login Test Case Started
+[INFO ] 2022-02-09 17:17:47.999 [main] LoginTest - Test :: validLogin Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:17:50.760 [main] LoginTest - Test :: Valid Login Test Case Ended
+[INFO ] 2022-02-09 17:17:55.178 [main] LogoutTest - Test :: logout Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:17:55.506 [main] LogoutTest - Test :: Logout Test Case Started
+[INFO ] 2022-02-09 17:17:58.605 [main] LogoutTest - Test :: Logout Test Case Ended
+[INFO ] 2022-02-09 17:18:03.431 [main] ProductTest - Test :: Relevent Product Test Case Started
+[INFO ] 2022-02-09 17:18:06.465 [main] ProductTest - Test :: Relevent Product Test Case Ended
+[INFO ] 2022-02-09 17:18:14.269 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Started
+[INFO ] 2022-02-09 17:18:18.713 [main] ProductTest - Test :: Sorting By price High to Low  Test Case Ended
+[INFO ] 2022-02-09 17:18:23.947 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Ended
+[INFO ] 2022-02-09 17:18:28.021 [main] ProductTest - Test :: Sorting By price Low to High  Test Case Started
+[INFO ] 2022-02-09 17:18:33.575 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Started
+[INFO ] 2022-02-09 17:18:37.699 [main] ProductTest - Test :: Filter  Product By Brand  Test Case Ended
+[INFO ] 2022-02-09 17:18:42.628 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Started
+[INFO ] 2022-02-09 17:18:43.645 [main] ProductTest - Test :: Filter  Product By Rating  Test Case Ended
+[INFO ] 2022-02-09 17:18:48.068 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:18:50.854 [main] ProductDetailsTest - Test :: Check Image of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 17:18:55.480 [main] ProductDetailsTest - Test :: Check Change color  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:19:00.406 [main] ProductDetailsTest - Test ::Check Change color  of Product Displayed Test Case Ended
+[INFO ] 2022-02-09 17:19:06.194 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:19:06.194 [main] ProductDetailsTest - Test :: The Verify Size Change of Product
+[INFO ] 2022-02-09 17:19:10.808 [main] ProductDetailsTest - Test :: The Verify Size Change of Product has Ended
+[INFO ] 2022-02-09 17:19:10.808 [main] ProductDetailsTest - Test :: Check Change Size  of Product Displayed Test Case Started
+[INFO ] 2022-02-09 17:19:27.865 [main] CartTest - Test :: Add To Cart Test Case Started
+[INFO ] 2022-02-09 17:19:27.867 [main] CartTest - Test :: addToCart -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:19:32.528 [main] CartTest - Test :: addToCart -Clicked to view the Product
+[INFO ] 2022-02-09 17:19:35.273 [main] CartTest - Test :: Add To Cart Test Case Ended
+[INFO ] 2022-02-09 17:19:53.023 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Started
+[INFO ] 2022-02-09 17:19:57.396 [main] CartTest - Test :: Unable Add to Cart for Out of Stock Product Test Case Ended
+[INFO ] 2022-02-09 17:20:01.739 [main] AddressTest - Test :: Valid Address Test Case Started
+[INFO ] 2022-02-09 17:20:01.741 [main] AddressTest - Test :: addValidAddress - Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:20:06.762 [main] AddressTest - Test :: addValidAddressA New Address Added to the profile
+[INFO ] 2022-02-09 17:20:06.767 [main] AddressTest - Test :: Valid Address Test Case Ended
+[INFO ] 2022-02-09 17:20:11.725 [main] AddressTest - Test :: InValid Address Test Case Started
+[INFO ] 2022-02-09 17:20:11.727 [main] AddressTest - Test :: addInValidAddress -Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:20:16.691 [main] AddressTest - Test :: InValid Address Test Case Ended
+[INFO ] 2022-02-09 17:20:22.228 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Started
+[INFO ] 2022-02-09 17:20:22.229 [main] FlipkartProfileInfoTest - Test :: changeName Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:20:26.453 [main] FlipkartProfileInfoTest - Test :: Change Profile Name Test Case Ended
+[INFO ] 2022-02-09 17:20:31.623 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Started
+[INFO ] 2022-02-09 17:20:31.623 [main] FlipkartProfileInfoTest - Test :: changeGender Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:20:36.673 [main] FlipkartProfileInfoTest - Test :: Change Gender  Test Case Ended
+[INFO ] 2022-02-09 17:20:44.397 [main] WishlistTest - Test :: Adding   Product to  Wishlist  Test Case Started
+[INFO ] 2022-02-09 17:20:44.397 [main] WishlistTest - Test :: addTowishlist Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:20:47.646 [main] WishlistTest - Test :: Adding Product to Wishlist  Test Case Ended
+[INFO ] 2022-02-09 17:20:53.343 [main] WishlistTest - Test ::Getting  Product from  Wishlist  Test Case Started
+[INFO ] 2022-02-09 17:20:53.344 [main] WishlistTest - Test :: getProductsInwishlist Signing Up to Flipkart Web App
+[INFO ] 2022-02-09 17:20:57.580 [main] WishlistTest - Products in the Wishlist
+[INFO ] 2022-02-09 17:20:58.542 [main] WishlistTest - My Wishlist (2)
+[INFO ] 2022-02-09 17:20:58.563 [main] WishlistTest - Test :: Getting  Product from  Wishlist  Test Case Ended

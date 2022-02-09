@@ -41,7 +41,7 @@ public class HomePageTest extends BaseTest {
 	public void verifyTitle() {
 		String testName = "verifyTitle";
 		logger.info("Test :: verify Title on Home Page  Test Case Started");
-		extentTest = extent.startTest("Verify that the User is able to access Dropdown");
+		extentTest = extent.startTest("Verify verify Title on Home Page is accessable ");
 		HashMap<String, String> testData = new HashMap<String, String>();
 		testData = fileExcel.getRowTestData(testPageData, testName);
 		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));

@@ -10,7 +10,7 @@
 				<include name="product" />
 				<include name="cart" />
 				<include name="profile" />
-				<include name="wishlit" />
+				<include name="wishlist" />
 			</run>
 		</groups>
 		<classes>

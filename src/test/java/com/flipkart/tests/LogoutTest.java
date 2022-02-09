@@ -22,6 +22,7 @@ public class LogoutTest extends BaseTest {
 	@Test(groups = { "Logout" }, priority = 4,enabled = true)
 	public void logout() {
 		String testName = "logout";
+		extentTest = extent.startTest("Verify LogOut after Login");
 		HashMap<String, String> testData = new HashMap<String, String>();
 		testData = fileExcel.getRowTestData(testPageData, testName);
 		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
@@ -32,13 +33,11 @@ public class LogoutTest extends BaseTest {
 		login.click_LoginButton();
 		logger.info("Test :: Logout Test Case Started");
 		Logout logout = new Logout(driver);
-		extentTest = extent.startTest("Verify LogOut after Login");
 		logout.gotoProfile();
 		logout.clickLogout();
-		extent.endTest(extentTest);
-		System.out.println(logout.verifyMsg());
-		assertEquals(logout.verifyMsg(), "Logout");
 		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
+		extent.endTest(extentTest);
+		assertEquals(logout.verifyMsg(), "Logout");
 		logger.info("Test :: Logout Test Case Ended");
 	}
 }

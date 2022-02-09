@@ -51,8 +51,8 @@ public class WishlistTest extends BaseTest {
 		String testName = "getProductsInwishlist";
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
 		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
-		logger.info("Test :: Removing  Product from  Wishlist  Test Case Started");
-		extentTest = extent.startTest("Verify Remove a product To WishList");
+		logger.info("Test ::Getting  Product from  Wishlist  Test Case Started");
+		extentTest = extent.startTest("Verify Getting  product To WishList");
 		Wishlist wish = new Wishlist(driver);
 		Login login = new Login(driver);
 		logger.info("Test :: " + testName + " Signing Up to Flipkart Web App");
@@ -66,7 +66,7 @@ public class WishlistTest extends BaseTest {
 		Assert.assertTrue(productList.size() > 0);
 		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
 		extent.endTest(extentTest);
-		logger.info("Test :: Removing  Product from  Wishlist  Test Case Ended");
+		logger.info("Test :: Getting  Product from  Wishlist  Test Case Ended");
 	}
 
 	/*

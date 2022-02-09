@@ -58,7 +58,7 @@ public class LoginTest extends BaseTest {
 		login.enterPassword(testData.get("pwd"));
 		login.click_LoginButton();
 		extent.endTest(extentTest);
-		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
+		extentTest.log(LogStatus.FAIL, testName + " Test has Failed");
 		assertNotEquals(login.getError(), "Your username or password is incorrect");
 		logger.info("Test :: InValid Login Test Case Ended");
 		

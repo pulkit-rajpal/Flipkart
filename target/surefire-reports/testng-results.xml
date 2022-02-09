@@ -1,145 +1,462 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="16" total="37" passed="20" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-09T11:34:57 IST" name="Suite" finished-at="2022-02-09T11:35:56 IST" duration-ms="59218">
+  <suite started-at="2022-02-09T17:17:21 IST" name="Suite" finished-at="2022-02-09T17:20:59 IST" duration-ms="217197">
     <groups>
+      <group name="product">
+        <method signature="ProductDetailsTest.changeColorofProduct()[pri:12, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" name="changeColorofProduct" class="com.flipkart.tests.ProductDetailsTest"/>
+        <method signature="ProductDetailsTest.changeSizeofProduct()[pri:13, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" name="changeSizeofProduct" class="com.flipkart.tests.ProductDetailsTest"/>
+        <method signature="ProductDetailsTest.checkImageDisplayed()[pri:11, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" name="checkImageDisplayed" class="com.flipkart.tests.ProductDetailsTest"/>
+        <method signature="ProductTest.chooseProductBrand()[pri:9, instance:com.flipkart.tests.ProductTest@598bd2ba]" name="chooseProductBrand" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.chooseProductRating()[pri:10, instance:com.flipkart.tests.ProductTest@598bd2ba]" name="chooseProductRating" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.relevantProducts()[pri:6, instance:com.flipkart.tests.ProductTest@598bd2ba]" name="relevantProducts" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.sortProductByPriceHtoL()[pri:7, instance:com.flipkart.tests.ProductTest@598bd2ba]" name="sortProductByPriceHtoL" class="com.flipkart.tests.ProductTest"/>
+        <method signature="ProductTest.sortProductByPriceLtoH()[pri:8, instance:com.flipkart.tests.ProductTest@598bd2ba]" name="sortProductByPriceLtoH" class="com.flipkart.tests.ProductTest"/>
+      </group> <!-- product -->
+      <group name="wishlist">
+        <method signature="WishlistTest.addTowishlist()[pri:20, instance:com.flipkart.tests.WishlistTest@38234a38]" name="addTowishlist" class="com.flipkart.tests.WishlistTest"/>
+        <method signature="WishlistTest.getProductsInwishlist()[pri:21, instance:com.flipkart.tests.WishlistTest@38234a38]" name="getProductsInwishlist" class="com.flipkart.tests.WishlistTest"/>
+      </group> <!-- wishlist -->
+      <group name="Logout">
+        <method signature="LogoutTest.logout()[pri:4, instance:com.flipkart.tests.LogoutTest@64bce832]" name="logout" class="com.flipkart.tests.LogoutTest"/>
+      </group> <!-- Logout -->
+      <group name="profile">
+        <method signature="AddressTest.addInValidAddress()[pri:17, instance:com.flipkart.tests.AddressTest@4f5991f6]" name="addInValidAddress" class="com.flipkart.tests.AddressTest"/>
+        <method signature="AddressTest.addValidAddress()[pri:16, instance:com.flipkart.tests.AddressTest@4f5991f6]" name="addValidAddress" class="com.flipkart.tests.AddressTest"/>
+        <method signature="FlipkartProfileInfoTest.changeGender()[pri:19, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" name="changeGender" class="com.flipkart.tests.FlipkartProfileInfoTest"/>
+        <method signature="FlipkartProfileInfoTest.changeName()[pri:18, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" name="changeName" class="com.flipkart.tests.FlipkartProfileInfoTest"/>
+      </group> <!-- profile -->
+      <group name="Login">
+        <method signature="LoginTest.invalidLogin()[pri:2, instance:com.flipkart.tests.LoginTest@32c4e8b2]" name="invalidLogin" class="com.flipkart.tests.LoginTest"/>
+        <method signature="LoginTest.validLogin()[pri:3, instance:com.flipkart.tests.LoginTest@32c4e8b2]" name="validLogin" class="com.flipkart.tests.LoginTest"/>
+      </group> <!-- Login -->
       <group name="cart">
-        <method signature="CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@3b96c42e]" name="addToCart" class="com.flipkart.tests.CartTest"/>
-        <method signature="CartTest.deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@3b96c42e]" name="deletefromCart" class="com.flipkart.tests.CartTest"/>
+        <method signature="CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@7ae42ce3]" name="addToCart" class="com.flipkart.tests.CartTest"/>
+        <method signature="CartTest.addtoCartOutofStock()[pri:15, instance:com.flipkart.tests.CartTest@7ae42ce3]" name="addtoCartOutofStock" class="com.flipkart.tests.CartTest"/>
       </group> <!-- cart -->
       <group name="home">
-        <method signature="HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" name="dropDownElectronics" class="com.flipkart.tests.HomePageTest"/>
+        <method signature="HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" name="dropDownElectronics" class="com.flipkart.tests.HomePageTest"/>
+        <method signature="HomePageTest.verifyTitle()[pri:1, instance:com.flipkart.tests.HomePageTest@66c92293]" name="verifyTitle" class="com.flipkart.tests.HomePageTest"/>
       </group> <!-- home -->
     </groups>
-    <test started-at="2022-02-09T11:34:57 IST" name="Test" finished-at="2022-02-09T11:35:56 IST" duration-ms="59218">
-      <class name="com.flipkart.tests.HomePageTest">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:56 IST" name="setExtent" finished-at="2022-02-09T11:34:57 IST" duration-ms="615" status="PASS">
+    <test started-at="2022-02-09T17:17:21 IST" name="Test" finished-at="2022-02-09T17:20:59 IST" duration-ms="217197">
+      <class name="com.flipkart.tests.AddressTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:19:58 IST" name="initializeWebdriver" finished-at="2022-02-09T17:19:59 IST" duration-ms="1275" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:57 IST" name="attachScreenshot" finished-at="2022-02-09T11:34:57 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:19:59 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:20:01 IST" duration-ms="1953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:01 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:20:01 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="addValidAddress()[pri:16, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:01 IST" name="addValidAddress" finished-at="2022-02-09T17:20:06 IST" duration-ms="5030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addValidAddress -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:06 IST" name="attachScreenshot" finished-at="2022-02-09T17:20:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54] output={null}]]]>
+                <![CDATA[[TestResult name=addValidAddress status=SUCCESS method=AddressTest.addValidAddress()[pri:16, instance:com.flipkart.tests.AddressTest@4f5991f6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:57 IST" name="initializeWebdriver" finished-at="2022-02-09T11:34:59 IST" duration-ms="2309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:34:59 IST" name="navigateToFlipkart" finished-at="2022-02-09T11:35:04 IST" duration-ms="5159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToFlipkart -->
-        <test-method signature="dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:35:04 IST" name="dropDownElectronics" finished-at="2022-02-09T11:35:06 IST" duration-ms="1739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropDownElectronics -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:35:06 IST" name="closebrowser" finished-at="2022-02-09T11:35:07 IST" duration-ms="963" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:06 IST" name="closebrowser" finished-at="2022-02-09T17:20:07 IST" duration-ms="603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.HomePageTest@a4add54]" started-at="2022-02-09T11:35:56 IST" name="endReport" finished-at="2022-02-09T11:35:57 IST" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:07 IST" name="initializeWebdriver" finished-at="2022-02-09T17:20:08 IST" duration-ms="1346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:08 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:20:11 IST" duration-ms="2511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:11 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:20:11 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="addInValidAddress()[pri:17, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:11 IST" name="addInValidAddress" finished-at="2022-02-09T17:20:16 IST" duration-ms="4966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInValidAddress -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:16 IST" name="attachScreenshot" finished-at="2022-02-09T17:20:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addInValidAddress status=SUCCESS method=AddressTest.addInValidAddress()[pri:17, instance:com.flipkart.tests.AddressTest@4f5991f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.AddressTest@4f5991f6]" started-at="2022-02-09T17:20:16 IST" name="closebrowser" finished-at="2022-02-09T17:20:17 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.flipkart.tests.AddressTest -->
+      <class name="com.flipkart.tests.WishlistTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:37 IST" name="initializeWebdriver" finished-at="2022-02-09T17:20:39 IST" duration-ms="1904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:39 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:20:43 IST" duration-ms="4551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:43 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:20:44 IST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="addTowishlist()[pri:20, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:44 IST" name="addTowishlist" finished-at="2022-02-09T17:20:47 IST" duration-ms="3250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTowishlist -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:47 IST" name="closebrowser" finished-at="2022-02-09T17:20:48 IST" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:47 IST" name="attachScreenshot" finished-at="2022-02-09T17:20:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTowishlist status=SUCCESS method=WishlistTest.addTowishlist()[pri:20, instance:com.flipkart.tests.WishlistTest@38234a38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:48 IST" name="initializeWebdriver" finished-at="2022-02-09T17:20:50 IST" duration-ms="1967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:50 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:20:52 IST" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:52 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:20:53 IST" duration-ms="559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="getProductsInwishlist()[pri:21, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:53 IST" name="getProductsInwishlist" finished-at="2022-02-09T17:20:58 IST" duration-ms="5221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductsInwishlist -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:58 IST" name="attachScreenshot" finished-at="2022-02-09T17:20:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getProductsInwishlist status=SUCCESS method=WishlistTest.getProductsInwishlist()[pri:21, instance:com.flipkart.tests.WishlistTest@38234a38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.WishlistTest@38234a38]" started-at="2022-02-09T17:20:58 IST" name="closebrowser" finished-at="2022-02-09T17:20:59 IST" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.flipkart.tests.WishlistTest -->
+      <class name="com.flipkart.tests.LogoutTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.LogoutTest@64bce832]" started-at="2022-02-09T17:17:51 IST" name="initializeWebdriver" finished-at="2022-02-09T17:17:52 IST" duration-ms="1342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.LogoutTest@64bce832]" started-at="2022-02-09T17:17:52 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:17:54 IST" duration-ms="1979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.LogoutTest@64bce832]" started-at="2022-02-09T17:17:54 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:17:55 IST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="logout()[pri:4, instance:com.flipkart.tests.LogoutTest@64bce832]" started-at="2022-02-09T17:17:55 IST" name="logout" finished-at="2022-02-09T17:17:58 IST" duration-ms="3430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.LogoutTest@64bce832]" started-at="2022-02-09T17:17:58 IST" name="closebrowser" finished-at="2022-02-09T17:17:59 IST" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LogoutTest@64bce832]" started-at="2022-02-09T17:17:58 IST" name="attachScreenshot" finished-at="2022-02-09T17:17:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=LogoutTest.logout()[pri:4, instance:com.flipkart.tests.LogoutTest@64bce832] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+      </class> <!-- com.flipkart.tests.LogoutTest -->
+      <class name="com.flipkart.tests.ProductTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:17:59 IST" name="initializeWebdriver" finished-at="2022-02-09T17:18:00 IST" duration-ms="1354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:00 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:18:02 IST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:02 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:18:03 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="relevantProducts()[pri:6, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:03 IST" name="relevantProducts" finished-at="2022-02-09T17:18:06 IST" duration-ms="3037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relevantProducts -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:06 IST" name="attachScreenshot" finished-at="2022-02-09T17:18:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=relevantProducts status=SUCCESS method=ProductTest.relevantProducts()[pri:6, instance:com.flipkart.tests.ProductTest@598bd2ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:06 IST" name="closebrowser" finished-at="2022-02-09T17:18:07 IST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:07 IST" name="initializeWebdriver" finished-at="2022-02-09T17:18:08 IST" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:08 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:18:13 IST" duration-ms="5217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:13 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:18:14 IST" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="sortProductByPriceHtoL()[pri:7, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:14 IST" name="sortProductByPriceHtoL" finished-at="2022-02-09T17:18:18 IST" duration-ms="4445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortProductByPriceHtoL -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:18 IST" name="closebrowser" finished-at="2022-02-09T17:18:19 IST" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:18 IST" name="attachScreenshot" finished-at="2022-02-09T17:18:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sortProductByPriceHtoL status=SUCCESS method=ProductTest.sortProductByPriceHtoL()[pri:7, instance:com.flipkart.tests.ProductTest@598bd2ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:19 IST" name="initializeWebdriver" finished-at="2022-02-09T17:18:20 IST" duration-ms="1435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:20 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:18:23 IST" duration-ms="2528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:23 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:18:23 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="sortProductByPriceLtoH()[pri:8, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:23 IST" name="sortProductByPriceLtoH" finished-at="2022-02-09T17:18:28 IST" duration-ms="4075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortProductByPriceLtoH -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:28 IST" name="closebrowser" finished-at="2022-02-09T17:18:28 IST" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:28 IST" name="attachScreenshot" finished-at="2022-02-09T17:18:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sortProductByPriceLtoH status=SUCCESS method=ProductTest.sortProductByPriceLtoH()[pri:8, instance:com.flipkart.tests.ProductTest@598bd2ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:28 IST" name="initializeWebdriver" finished-at="2022-02-09T17:18:30 IST" duration-ms="1820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:30 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:18:33 IST" duration-ms="2591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:33 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:18:33 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="chooseProductBrand()[pri:9, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:33 IST" name="chooseProductBrand" finished-at="2022-02-09T17:18:37 IST" duration-ms="4124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseProductBrand -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:37 IST" name="attachScreenshot" finished-at="2022-02-09T17:18:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chooseProductBrand status=SUCCESS method=ProductTest.chooseProductBrand()[pri:9, instance:com.flipkart.tests.ProductTest@598bd2ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:37 IST" name="closebrowser" finished-at="2022-02-09T17:18:38 IST" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:38 IST" name="initializeWebdriver" finished-at="2022-02-09T17:18:39 IST" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:39 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:18:42 IST" duration-ms="2433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:42 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:18:42 IST" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="chooseProductRating()[pri:10, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:42 IST" name="chooseProductRating" finished-at="2022-02-09T17:18:43 IST" duration-ms="1018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseProductRating -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:43 IST" name="closebrowser" finished-at="2022-02-09T17:18:44 IST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductTest@598bd2ba]" started-at="2022-02-09T17:18:43 IST" name="attachScreenshot" finished-at="2022-02-09T17:18:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chooseProductRating status=SUCCESS method=ProductTest.chooseProductRating()[pri:10, instance:com.flipkart.tests.ProductTest@598bd2ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+      </class> <!-- com.flipkart.tests.ProductTest -->
+      <class name="com.flipkart.tests.HomePageTest">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:21 IST" name="setExtent" finished-at="2022-02-09T17:17:21 IST" duration-ms="893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:22 IST" name="initializeWebdriver" finished-at="2022-02-09T17:17:24 IST" duration-ms="2199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:24 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:17:26 IST" duration-ms="2391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:26 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:17:27 IST" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:27 IST" name="dropDownElectronics" finished-at="2022-02-09T17:17:31 IST" duration-ms="3740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownElectronics -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:31 IST" name="attachScreenshot" finished-at="2022-02-09T17:17:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dropDownElectronics status=SUCCESS method=HomePageTest.dropDownElectronics()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:31 IST" name="closebrowser" finished-at="2022-02-09T17:17:31 IST" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:31 IST" name="initializeWebdriver" finished-at="2022-02-09T17:17:32 IST" duration-ms="1206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:32 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:17:35 IST" duration-ms="2524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:35 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:17:35 IST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="verifyTitle()[pri:1, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:35 IST" name="verifyTitle" finished-at="2022-02-09T17:17:35 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:35 IST" name="attachScreenshot" finished-at="2022-02-09T17:17:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitle status=SUCCESS method=HomePageTest.verifyTitle()[pri:1, instance:com.flipkart.tests.HomePageTest@66c92293] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:17:35 IST" name="closebrowser" finished-at="2022-02-09T17:17:36 IST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.flipkart.tests.HomePageTest@66c92293]" started-at="2022-02-09T17:20:59 IST" name="endReport" finished-at="2022-02-09T17:20:59 IST" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.flipkart.tests.HomePageTest -->
-      <class name="com.flipkart.tests.CartTest">
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:07 IST" name="attachScreenshot" finished-at="2022-02-09T11:35:07 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@3b96c42e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:07 IST" name="initializeWebdriver" finished-at="2022-02-09T11:35:11 IST" duration-ms="3328" status="PASS">
+      <class name="com.flipkart.tests.LoginTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:36 IST" name="initializeWebdriver" finished-at="2022-02-09T17:17:37 IST" duration-ms="1298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:11 IST" name="navigateToFlipkart" finished-at="2022-02-09T11:35:13 IST" duration-ms="2382" status="PASS">
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:37 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:17:40 IST" duration-ms="2676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToFlipkart -->
-        <test-method signature="addToCart()[pri:14, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:13 IST" name="addToCart" finished-at="2022-02-09T11:35:24 IST" duration-ms="11058" status="PASS">
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:40 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:17:41 IST" duration-ms="594" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:24 IST" name="closebrowser" finished-at="2022-02-09T11:35:25 IST" duration-ms="813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:25 IST" name="attachScreenshot" finished-at="2022-02-09T11:35:25 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@3b96c42e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenshot -->
-        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:25 IST" name="initializeWebdriver" finished-at="2022-02-09T11:35:27 IST" duration-ms="2466" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeWebdriver -->
-        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:27 IST" name="navigateToFlipkart" finished-at="2022-02-09T11:35:29 IST" duration-ms="2235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToFlipkart -->
-        <test-method signature="deletefromCart()[pri:15, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:29 IST" name="deletefromCart" finished-at="2022-02-09T11:35:55 IST" duration-ms="25905" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="invalidLogin()[pri:2, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:41 IST" name="invalidLogin" finished-at="2022-02-09T17:17:41 IST" duration-ms="811" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div._3dsJAO._24d-qY.FhkMJZ"}
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PULKITRAJPAL', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
-*** Element info: {Using=css selector, value=div._3dsJAO._24d-qY.FhkMJZ}]]>
+              <![CDATA[did not expect [Your username or password is incorrect] but found [Your username or password is incorrect]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div._3dsJAO._24d-qY.FhkMJZ"}
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PULKITRAJPAL', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\PULKIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7bbe9ccf48a0bed2dd47bf366393c287
-*** Element info: {Using=css selector, value=div._3dsJAO._24d-qY.FhkMJZ}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy26.click(Unknown Source)
-at com.flipkart.pages.Cart.removeFromCart(Cart.java:98)
-at com.flipkart.tests.CartTest.deletefromCart(CartTest.java:62)
+              <![CDATA[java.lang.AssertionError: did not expect [Your username or password is incorrect] but found [Your username or password is incorrect]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failEquals(Assert.java:1041)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+at org.testng.Assert.assertNotEquals(Assert.java:1531)
+at org.testng.Assert.assertNotEquals(Assert.java:1535)
+at com.flipkart.tests.LoginTest.invalidLogin(LoginTest.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,14 +491,279 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deletefromCart -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@3b96c42e]" started-at="2022-02-09T11:35:55 IST" name="closebrowser" finished-at="2022-02-09T11:35:56 IST" duration-ms="816" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:41 IST" name="attachScreenshot" finished-at="2022-02-09T17:17:42 IST" duration-ms="79" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin status=FAILURE method=LoginTest.invalidLogin()[pri:2, instance:com.flipkart.tests.LoginTest@32c4e8b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:42 IST" name="closebrowser" finished-at="2022-02-09T17:17:42 IST" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:42 IST" name="initializeWebdriver" finished-at="2022-02-09T17:17:43 IST" duration-ms="1273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:43 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:17:47 IST" duration-ms="3593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:47 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:17:47 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="validLogin()[pri:3, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:47 IST" name="validLogin" finished-at="2022-02-09T17:17:50 IST" duration-ms="2762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:50 IST" name="attachScreenshot" finished-at="2022-02-09T17:17:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=LoginTest.validLogin()[pri:3, instance:com.flipkart.tests.LoginTest@32c4e8b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.LoginTest@32c4e8b2]" started-at="2022-02-09T17:17:50 IST" name="closebrowser" finished-at="2022-02-09T17:17:51 IST" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.flipkart.tests.LoginTest -->
+      <class name="com.flipkart.tests.FlipkartProfileInfoTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:17 IST" name="initializeWebdriver" finished-at="2022-02-09T17:20:18 IST" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:18 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:20:21 IST" duration-ms="3048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:21 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:20:22 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="changeName()[pri:18, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:22 IST" name="changeName" finished-at="2022-02-09T17:20:26 IST" duration-ms="4225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeName -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:26 IST" name="closebrowser" finished-at="2022-02-09T17:20:27 IST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:26 IST" name="attachScreenshot" finished-at="2022-02-09T17:20:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=changeName status=SUCCESS method=FlipkartProfileInfoTest.changeName()[pri:18, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:27 IST" name="initializeWebdriver" finished-at="2022-02-09T17:20:28 IST" duration-ms="1260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:28 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:20:30 IST" duration-ms="2541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:30 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:20:31 IST" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="changeGender()[pri:19, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:31 IST" name="changeGender" finished-at="2022-02-09T17:20:36 IST" duration-ms="5052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeGender -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:36 IST" name="attachScreenshot" finished-at="2022-02-09T17:20:36 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=changeGender status=SUCCESS method=FlipkartProfileInfoTest.changeGender()[pri:19, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.FlipkartProfileInfoTest@484094a5]" started-at="2022-02-09T17:20:36 IST" name="closebrowser" finished-at="2022-02-09T17:20:37 IST" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.flipkart.tests.FlipkartProfileInfoTest -->
+      <class name="com.flipkart.tests.ProductDetailsTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:44 IST" name="initializeWebdriver" finished-at="2022-02-09T17:18:45 IST" duration-ms="1232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:45 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:18:47 IST" duration-ms="2068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:47 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:18:48 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="checkImageDisplayed()[pri:11, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:48 IST" name="checkImageDisplayed" finished-at="2022-02-09T17:18:50 IST" duration-ms="2787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkImageDisplayed -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:50 IST" name="attachScreenshot" finished-at="2022-02-09T17:18:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkImageDisplayed status=SUCCESS method=ProductDetailsTest.checkImageDisplayed()[pri:11, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:50 IST" name="closebrowser" finished-at="2022-02-09T17:18:51 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:51 IST" name="initializeWebdriver" finished-at="2022-02-09T17:18:52 IST" duration-ms="1263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:52 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:18:55 IST" duration-ms="2336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:55 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:18:55 IST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="changeColorofProduct()[pri:12, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:18:55 IST" name="changeColorofProduct" finished-at="2022-02-09T17:19:00 IST" duration-ms="4926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeColorofProduct -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:00 IST" name="closebrowser" finished-at="2022-02-09T17:19:01 IST" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:00 IST" name="attachScreenshot" finished-at="2022-02-09T17:19:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=changeColorofProduct status=SUCCESS method=ProductDetailsTest.changeColorofProduct()[pri:12, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:01 IST" name="initializeWebdriver" finished-at="2022-02-09T17:19:02 IST" duration-ms="1888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:02 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:19:05 IST" duration-ms="2687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:05 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:19:06 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="changeSizeofProduct()[pri:13, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:06 IST" name="changeSizeofProduct" finished-at="2022-02-09T17:19:10 IST" duration-ms="4615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeSizeofProduct -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:10 IST" name="attachScreenshot" finished-at="2022-02-09T17:19:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=changeSizeofProduct status=SUCCESS method=ProductDetailsTest.changeSizeofProduct()[pri:13, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.ProductDetailsTest@5a755cc1]" started-at="2022-02-09T17:19:10 IST" name="closebrowser" finished-at="2022-02-09T17:19:11 IST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.flipkart.tests.ProductDetailsTest -->
+      <class name="com.flipkart.tests.CartTest">
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:11 IST" name="initializeWebdriver" finished-at="2022-02-09T17:19:12 IST" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:12 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:19:15 IST" duration-ms="2784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:15 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:19:27 IST" duration-ms="12391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="addToCart()[pri:14, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:27 IST" name="addToCart" finished-at="2022-02-09T17:19:35 IST" duration-ms="7408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:35 IST" name="attachScreenshot" finished-at="2022-02-09T17:19:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCart status=SUCCESS method=CartTest.addToCart()[pri:14, instance:com.flipkart.tests.CartTest@7ae42ce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:35 IST" name="closebrowser" finished-at="2022-02-09T17:19:35 IST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="initializeWebdriver()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:35 IST" name="initializeWebdriver" finished-at="2022-02-09T17:19:37 IST" duration-ms="1859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebdriver -->
+        <test-method is-config="true" signature="navigateToFlipkart()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:37 IST" name="navigateToFlipkart" finished-at="2022-02-09T17:19:52 IST" duration-ms="14620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkart -->
+        <test-method is-config="true" signature="navigateToFlipkartlogin()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:52 IST" name="navigateToFlipkartlogin" finished-at="2022-02-09T17:19:53 IST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlipkartlogin -->
+        <test-method signature="addtoCartOutofStock()[pri:15, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:53 IST" name="addtoCartOutofStock" finished-at="2022-02-09T17:19:57 IST" duration-ms="4375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtoCartOutofStock -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:57 IST" name="closebrowser" finished-at="2022-02-09T17:19:58 IST" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.flipkart.tests.CartTest@7ae42ce3]" started-at="2022-02-09T17:19:57 IST" name="attachScreenshot" finished-at="2022-02-09T17:19:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addtoCartOutofStock status=SUCCESS method=CartTest.addtoCartOutofStock()[pri:15, instance:com.flipkart.tests.CartTest@7ae42ce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
       </class> <!-- com.flipkart.tests.CartTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

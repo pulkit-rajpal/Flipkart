@@ -100,7 +100,7 @@ public class ProductTest extends BaseTest {
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
 		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
 		logger.info("Test :: Filter  Product By Rating  Test Case Started");
-		extentTest = extent.startTest("Verify that the result that ");
+		extentTest = extent.startTest("Verify that the result that Filter  Product By Rating  is achiveable ");
 		Product search = new Product(driver);
 		search.search(testData.get("keyword"));
 		search.addRating();
