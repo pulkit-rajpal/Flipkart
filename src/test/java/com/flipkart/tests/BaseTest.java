@@ -129,7 +129,7 @@ public class BaseTest {
 
 	/* Navigating to the Login page of the Flipkart */
 
-	@BeforeMethod(onlyForGroups = { "product" },alwaysRun = false)
+	@BeforeMethod(groups = { "product" })
 	public static void navigateToFlipkartlogin(Method m) {
 		driver.get(prop1.getProperty("login"));
 	}
