@@ -9,17 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage extends BasePage{
-
-
+public class HomePage extends BasePage {
 
 	WebDriver driver;
-	
+
 	/*
 	 * Home Page for getting Locators for testing functionalities of the Home Page
 	 * fields
 	 */
-
 
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -51,6 +48,12 @@ public class HomePage extends BasePage{
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		WebElement text = wait.until(ExpectedConditions.elementToBeClickable(By.className("_3vKRL2")));
 		return text.getText();
+	}
+
+	public String verifyTitle() {
+		String title = driver.getTitle();
+		return title;
+
 	}
 
 }

@@ -14,21 +14,18 @@
       </run>
     </groups>
     <classes>
-      <class name="com.flipkart.tests.ProductTest">
+      <class name="com.flipkart.tests.CartTest">
         <methods>
           <include name="attachScreenshot"/>
-          <include name="chooseProductBrand"/>
+          <include name="addtoCartOutofStock"/>
           <include name="initializeWebdriver"/>
           <include name="closebrowser"/>
           <include name="endReport"/>
-          <include name="sortProductByPriceHtoL"/>
+          <include name="navigateToFlipkartlogin"/>
           <include name="navigateToFlipkart"/>
           <include name="setExtent"/>
-          <include name="chooseProductRating"/>
-          <include name="sortProductByPriceLtoH"/>
-          <include name="relevantProducts"/>
         </methods>
-      </class> <!-- com.flipkart.tests.ProductTest -->
+      </class> <!-- com.flipkart.tests.CartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

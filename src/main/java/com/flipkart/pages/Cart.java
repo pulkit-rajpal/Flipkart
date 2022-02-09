@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Cart extends BasePage{
+public class Cart extends BasePage {
 	WebDriver driver;
 
 	/*
@@ -68,7 +68,7 @@ public class Cart extends BasePage{
 		// List<WebElement> results = driver.findElements(By.className("_4rR01T"));
 		List<WebElement> results = wait
 				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("_4rR01T")));
-		results.get(0).click();
+		results.get(results.size()-1).click();
 	}
 
 	public String clickAddTocart() {
@@ -92,12 +92,6 @@ public class Cart extends BasePage{
 		return placeorder.getText();
 	}
 
-	public void removeFromCart() {
-		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_20, TimeUnit.SECONDS);
-		remove.click();
-		//removeButton.click();
-	}
-
 	public String verifySoldOut() {
 		String currentHandle = driver.getWindowHandle();
 		Set<String> handleSet = driver.getWindowHandles();
@@ -115,14 +109,20 @@ public class Cart extends BasePage{
 		return num;
 	}
 
-	protected void waitForElementTobeClickable(WebElement webElement) {
-		new WebDriverWait(driver, IMPLITICIT_WAIT_10).until(ExpectedConditions.elementToBeClickable(webElement));
+	public void removeFromCart() {
+		driver.manage().timeouts().implicitlyWait(IMPLITICIT_WAIT_20, TimeUnit.SECONDS);
+		remove.click();
+		removeButton.click();
 	}
 
+	
+	
 	public void gotoCart() {
 		WebDriverWait wait = new WebDriverWait(driver, IMPLITICIT_WAIT_15);
-		WebElement cart = wait.until(ExpectedConditions.elementToBeClickable(By.className("KK-o3G")));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", cart);
-
+		WebElement cart =  wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//span[normalize-space()='Cart']")));
+		cart.click();
 	}
+
+
 }

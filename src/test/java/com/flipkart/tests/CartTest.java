@@ -44,47 +44,46 @@ public class CartTest extends BaseTest {
 		logger.info("Test :: Add To Cart Test Case Ended");
 
 	}
+	/*
+	 * @Test(groups = { "cart" }, priority = 15, enabled = true) public void
+	 * deletefromCart() { String testName = "deletefromCart"; HashMap<String,
+	 * String> testData = fileExcel.getRowTestData(testPageData, testName);
+	 * ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
+	 * extentTest = extent.startTest("Verify Removing a Product from  Cart");
+	 * logger.info("Test :: Delete From  Cart Test Case Started"); Cart cart = new
+	 * Cart(driver); Login login = new Login(driver); logger.info("Test :: " +
+	 * testName + " Signing Up to Flipkart Web App");
+	 * login.entermobileNo(testData.get("mob").replace("\"", ""));
+	 * login.enterPassword(testData.get("pwd")); login.click_LoginButton();
+	 * cart.gotoCart(); cart.removeFromCart(); logger.info("Test :: " + testName +
+	 * " -Product Removed from cart"); assertEquals(driver.getTitle(),
+	 * "Shopping Cart | Flipkart.com"); extentTest.log(LogStatus.PASS, testName +
+	 * " Test has Passed"); extent.endTest(extentTest);
+	 * logger.info("Test :: Delete From  Cart Test Case Ended"); }
+	 */
+	
+	
 
 	@Test(groups = { "cart" }, priority = 15, enabled = true)
-	public void deletefromCart() {
-		String testName = "deletefromCart";
+	public void addtoCartOutofStock() {
+		String testName = "addtoCartOutofStock";
+		extentTest = extent.startTest("Verify Unable Add to Cart for Out of Stock Product Test");
+
 		HashMap<String, String> testData = fileExcel.getRowTestData(testPageData, testName);
 		ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
-		extentTest = extent.startTest("Verify Removing a Product from  Cart");
-		logger.info("Test :: Delete From  Cart Test Case Started");
-		Cart cart = new Cart(driver);
+		extentTest = extent.startTest("Verify Unable Add to Cart for Out of Stock Product Test");
+		logger.info("Test :: Unable Add to Cart for Out of Stock Product Test Case Started");
 		Login login = new Login(driver);
-		logger.info("Test :: " + testName + " Signing Up to Flipkart Web App");
+		Cart cart = new Cart(driver);
 		login.entermobileNo(testData.get("mob").replace("\"", ""));
 		login.enterPassword(testData.get("pwd"));
 		login.click_LoginButton();
-		cart.gotoCart();
-		cart.removeFromCart();
-		logger.info("Test :: " + testName + " -Product Removed from cart");
-		assertEquals(driver.getTitle(), "Shopping Cart | Flipkart.com");
-		extentTest.log(LogStatus.PASS, testName + " Test has Passed");
+		cart.search(testData.get("key"));
+		cart.click_product();
+		assertEquals(cart.verifySoldOut(), "Sold Out");
+		extentTest.log(LogStatus.PASS, "Unable Add to Cart for Out of Stock Product Test Case Passed");
 		extent.endTest(extentTest);
-		logger.info("Test :: Delete From  Cart Test Case Ended");
+		logger.info("Test :: Unable Add to Cart for Out of Stock Product Test Case Ended");
 	}
-
-	/*
-	 * @Test(groups = { "cart" }, priority = 10, enabled = false) public void
-	 * addtoCartOutofStock() { String testName = "addtoCartOutofStock"; fileExcel =
-	 * new FileReadExcel(".\\Resources\\TestCasesFile.xlsx"); HashMap<String,
-	 * String> testData = fileExcel.getRowTestData(testPageData, testName);
-	 * ExecutionRequired.checkExecutionRequired(testData.get("Execution Required"));
-	 * extentTest = extent.startTest("Verify adding a valid Address"); logger.
-	 * info("Test :: Unable Add to Cart for Out of Stock Product Test Case Started"
-	 * ); extentTest = extent.startTest("Verify Add a product To Cart"); Login login
-	 * = new Login(driver); Cart cart = new Cart(driver);
-	 * login.entermobileNo(testData.get("mob").replace("\"", ""));
-	 * login.enterPassword(testData.get("pwd")); login.click_LoginButton();
-	 * cart.search(testData.get("key")); cart.click_product();
-	 * extent.endTest(extentTest); assertEquals(cart.verifySoldOut(), "Sold Out");
-	 * extentTest.log(LogStatus.PASS,
-	 * "Unable Add to Cart for Out of Stock Product Test Case Passed"); logger.
-	 * info("Test :: Unable Add to Cart for Out of Stock Product Test Case Ended");
-	 * }
-	 */
 
 }

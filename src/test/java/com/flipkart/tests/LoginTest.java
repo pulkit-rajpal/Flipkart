@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
 
 	
 	
-	@Test(groups = { "Login" }, priority = 2,enabled = true)
+	@Test(groups = { "Login" }, priority = 3,enabled = true)
 	public void validLogin() {
 		String testName = "validLogin";
 		HashMap<String, String> testData = new HashMap<String, String>();
@@ -43,7 +43,7 @@ public class LoginTest extends BaseTest {
 		logger.info("Test :: Valid Login Test Case Ended");
 	}
 
-	@Test(groups = { "Login" }, priority = 1,enabled = true)
+	@Test(groups = { "Login" }, priority = 2,enabled = true)
 	public void invalidLogin() {
 		String testName = "invalidLogin";
 		HashMap<String, String> testData = new HashMap<String, String>();
